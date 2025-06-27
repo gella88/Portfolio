@@ -1,0 +1,25 @@
+{
+  "name": "work-and-study",
+  "version": "1.0.0",
+  "description": "portfolio projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gella88/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Monina Anastasiia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gella88/Portfolio/issues"
+  },
+  "homepage": "https://github.com/gella88/Portfolio#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

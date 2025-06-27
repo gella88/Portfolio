@@ -1,0 +1,80 @@
+.header__telephone:hover,
+.header-nav__link:hover {
+    color: var(--color-three);
+}
+
+.header__cabinet:hover,
+.contacts__link:hover,
+.footer__link:hover,
+.booking-sale__link:hover,
+.service__subtitle:hover {
+    color: #F0BF5F;
+}
+
+.header__telephone:focus-visible,
+.header-nav__link:focus-visible,
+.header__cabinet:focus-visible,
+.contacts__link:focus-visible,
+.footer__link:focus-visible,
+.booking-sale__link:focus-visible {
+    color: var(--color-three);
+    border: 1px solid var(--color-three);
+    padding: 5px;
+}
+
+.service__subtitle:focus-visible,
+.service__subtitle:active {
+ color: var(--color-three)
+}
+
+.header__telephone:active,
+.header-nav__link:active,
+.header__cabinet:active,
+.contacts__link:active,
+.footer__link:active,
+.booking-sale__link:active
+ {
+   color: #A47312;
+}
+
+.search-form__input:hover, 
+.booking-form__input:hover,
+.contacts__form-input:hover,
+.search-form__input:focus-visible, 
+.booking-form__input:focus-visible,
+.contacts__form-input:focus-visible {
+ border-color: rgb(102, 102, 102, .2);   
+}
+
+.search-form__input:active, 
+.booking-form__input:active,
+.contacts__form-input:active {
+ border-color: rgb(102, 102, 102, 1);   
+}
+
+.booking-form__button:hover,
+.contacts__form-button:hover,
+.booking-form__button:focus-visible,
+.contacts__form-button:focus-visible {
+  background-color: var(--color-zero);
+  color: var(--color-three);
+}
+
+.booking-form__button:active,
+.contacts__form-button:active {
+  background-color: #A47312;
+  color: var(--color-zero);
+}
+
+.location__button:hover,
+.contacts__button:hover, 
+.location__button:focus-visible,
+.contacts__button:focus-visible {
+    background-color: var(--color-three);
+    color: var(--color-zero);
+}
+
+.location__button:active,
+.contacts__button:active {
+    background-color: #A47312;
+}

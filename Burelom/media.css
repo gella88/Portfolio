@@ -1,0 +1,373 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 6 version
+*/
+
+/* Notebook */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero__list {
+        max-width: 70%;
+    }
+
+    .hero__title1 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .promo__title2 {
+        white-space: wrap;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1115px) {
+    .container {
+        max-width: 960px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1.5;
+    }
+
+    .header__logo-image {
+        display: none;
+    }
+
+    .header::before {
+        background-image: none;
+    }
+
+    .hero__list {
+        max-width: 100%;
+    }
+
+    .mobile__logo {
+        padding-left: 40px;
+        max-height: 100px;
+    }
+
+    /* Показываем обычное меню (пример) */
+    .header__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        margin: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        -webkit-transition: -webkit-transform .3s ease-in;
+        transition: -webkit-transform .3s ease-in;
+        -o-transition: transform .3s ease-in;
+        transition: transform .3s ease-in;
+        transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+        -webkit-transform: translateX(-140%);
+        -ms-transform: translateX(-140%);
+        transform: translateX(-140%);
+        padding: 40px 0;
+    }
+
+    .header__menu.open {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .header__menu-link {
+        color: aliceblue;
+    }
+
+    .burger.change {
+        z-index: 100;
+    }
+
+    .burger.change .burger__bar {
+        background-color: aliceblue;
+    }
+
+    .hero__title1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .promo__list-item {
+        font-size: 14px;
+    }
+
+    .cards__list-item .cars__list-title3 {
+        font-size: 16px;
+    }
+
+    .prise__list {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .prise__list-rows h4,
+    .prise__list-rows,
+    .prise__list-column--mobile {
+        font-size: 12px;
+    }
+
+    .prise__list-column {
+        margin-bottom: 20px;
+    }
+
+    .modal__content {
+        -ms-touch-action: pan-y;
+            touch-action: pan-y;
+    }
+
+    .modal__content,
+    .modal__content-text {
+        font-size: 12px;
+    }
+
+    .modal__content-title2 {
+        font-size: 14px;
+    }
+
+    .modal__content .modal__content-title3,
+    .modal__content-text {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .modal__link {
+        position: static;
+        text-align: center;
+    }
+
+    .modal .close {
+        top: 5px;
+        right: 5px;
+    }
+
+    .modal__block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+    }
+
+    .modal__list {
+        width: 100%;
+    }
+
+    /* footer */
+
+    .footer__text {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .footer__image {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .hero {
+        text-align: center;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+.header__social-icon {
+    width: 25px;
+    height: 25px;
+}
+    h1 {
+        -webkit-transform-origin: bottom;
+            -ms-transform-origin: bottom;
+                transform-origin: bottom;
+    }
+
+    .promo__preferents {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .promo__block:first-of-type,
+    .promo__block:last-of-type {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+    }
+
+    .promo__text,
+    .promo__text2 {
+        font-size: 14px;
+    }
+
+    .cards__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .cards__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .cards__list-item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .prise__acc .prise__list {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+
+    }
+
+    .prise__acc .prise__list-column {
+        padding: 10px;
+        font-size: 12px;
+line-height: 1;
+    }
+
+    .prise__acc .prise__list-column:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    /* footer */
+    .footer__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+    }
+
+    .footer__text {
+        margin: 0 0 10px 0;
+    }
+
+    .footer__image {
+
+        margin: 0 0 5px 0;
+    }
+
+    .footer__logo-image {
+        width: 90px;
+    }
+}
+
+@media (max-width: 500px) {
+    .prise__acc .prise__list-column {
+        font-size: 10px;
+    }
+
+    .mobile__logo {
+        display: none;
+    }
+
+    .prise__acc-title4 {
+        font-size: 12px;
+        white-space: wrap;
+        text-align: center;
+    }
+
+    .prise__acc-image {
+        width: 20px;
+    }
+
+    .prise__acc-btn {
+        font-size: 10px;
+    }
+
+    .prise__acc-item {
+        padding: 5px 15px;
+    }
+
+    .prise__acc-content {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .prise__acc .prise__list-column {
+        font-size: 8px;
+    }
+    .prise__acc .prise__list-column:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    .prise__acc .prise__list-column {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1116px) {
+
+    .burger,
+    .mobile__logo {
+        display: none;
+        /* Скрываем бургер */
+    }
+}

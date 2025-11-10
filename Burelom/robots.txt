@@ -4,4 +4,3 @@ User-agent: *
 Crawl-delay: 10
 Allow: /
 Sitemap: https://burelom.pro/sitemap.xml
-Host: https://burelom.pro/

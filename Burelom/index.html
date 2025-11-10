@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <!-- META TAG'S -->
     <meta name="description"
-        content="Профессиональное алмазное бурение и резка бетона, кирпича и других материалов в Москве, Московской области и регионах. Быстро, качественно, без пыли. Закажите услуги по выгодным ценам!">
+        content="✅ Burelom.pro - услуги алмазного бурения и резки бетона в Москве и МО. Резка проемов, бурение отверстий, канатная резка, демонтаж конструкций. Срочный выезд. ☎ 8-993-364-36-71 ☎ 8-977-301-10-50">
     <meta name="keywords"
         content="алмазное бурение, алмазная резка, резка бетона, бурение отверстий, алмазное бурение в Москве, Московской области и регионах, алмазная резка в Москве, Московской области и регионах, бурение цена, резка цена, сверление бетона, сверление отверстий, демонтаж бетона, усиление проемов, резка проемов">
 
     <meta name="robots" content="index, follow">
     <meta name="author" content="БУРЕЛОМ">
-    <meta name="revisit-after" content="7 days">
 
     <!-- Open Graph (для социальных сетей) -->
     <meta property="og:title" content="Алмазное бурение и резка бетона в в Москве, Московской области и регионах">
@@ -21,16 +20,72 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="burelom.pro">
 
+    <!-- Микроразметка Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "БУРЕЛОМ - Алмазное бурение и резка",
+        "alternateName": "Burelom.pro",
+        "url": "https://burelom.pro",
+        "logo": "https://burelom.pro/img/logo.svg",
+        "description": "Профессиональные услуги алмазного бурения и резки бетона в Москве, Московской области и регионах",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Москва и Московская область",
+            "addressCountry": "RU"
+        },
+        "areaServed": ["Москва", "Московская область"],
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-993-364-36-71",
+                "contactType": "customer service",
+                "areaServed": "RU",
+                "availableLanguage": ["Russian"]
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+7-977-301-10-50", 
+                "contactType": "customer service",
+                "areaServed": "RU",
+                "availableLanguage": ["Russian"]
+            }
+        ],
+        "openingHours": "Mo-Su 08:00-22:00"
+    }
+    </script>
+
     <!-- STYLES -->
-    <link rel="stylesheet" href="./swiper.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="media.css">
 
-    <title>Алмазное бурение "Бурелом"</title>
+    <link rel="icon" type="image/x-icon" href="https://burelom.pro/favicon.ico">
+    <link rel="shortcut icon" href="/https://burelom.pro/favicon.ico" />
+
+    <link rel="icon" type="image/png" href="/https://burelom.pro/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/https://burelom.pro/favicon.svg" />
+
+    <!-- <meta name="apple-mobile-web-app-title" content="burelom.pro" /> -->
+
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <script defer src="https://player.kinescope.io/embed.js"></script>
+
+    <title>Алмазное бурение и резка бетона в Москве, Подмосковье и регионах - Burelom.pro</title>
+
 </head>
 
 <body id="body" class="body">
     <header class="header">
+
+        <!-- фоновое видео -->
+        <video class="header__video" autoplay muted loop playsinline>
+            <source src="./path/background__video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
         <div class="container header__inner">
             <div class="header__top">
                 <div class="burger">
@@ -38,16 +93,17 @@
                     <div class="burger__bar"></div>
                     <div class="burger__bar"></div>
                 </div>
-                <img class="mobile__logo" src="img/mobile__logo.svg" alt="">
+                <img class="mobile__logo" src="img/mobile__logo.svg"
+                    alt="Логотип Алмазное бурение и резка - БУРЕЛОМ.ПРО">
                 <!-- LOGOTYPE -->
                 <a href="index.html" class="logo header__logo"><img class="logo__image header__logo-image"
-                        src='img/logo.svg' alt="Логотип Бурелом - алмазное бурение"></a>
+                        src='img/logo.svg' alt="Логотип Алмазное бурение - БУРЕЛОМ.ПРО"></a>
                 <!-- MENU -->
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item"><a class="header__menu-link" href="./index.html">Главная</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link" href="#cards">Услуги</a></li>
-                        <li class="header__menu-item"><a class="header__menu-link" href="#slider">Портфолио</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#accordion">Услуги</a></li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#gallery">Портфолио</a></li>
                         <li class="header__menu-item"><a class="header__menu-link" href="#prise">Прайс-лист</a></li>
                         <li class="header__menu-item"><a class="header__menu-link" href="#footer">Контакты</a></li>
                     </ul>
@@ -55,11 +111,11 @@
                 <!-- BUTTONS -->
                 <div class="header__social">
                     <div class="header__social-phones">
-                        <a href="tel:+79933643617" class="btn header__btn">8-993-364-36-17</a>
-                        <a href="tel:+79773011050" class="btn header__btn">8-977-301-10-50</a>
+                        <a href="https://wa.me/+79933643671" class="btn header__btn" target="_blank">8-993-364-36-71</a>
+                        <a href="https://t.me/+79773011050" class="btn header__btn" target="_blank">8-977-301-10-50</a>
                     </div>
                     <div class="header__social-icons">
-                        <a href="https://wa.me/+79933643617" class="header__social-link" target="_blank"
+                        <a href="https://wa.me/+79933643671" class="header__social-link" target="_blank"
                             rel="noopener noreferrer">
                             <svg class="header__social-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="46.000000pt" height="46.000000pt" viewBox="0 0 46.000000 46.000000"
@@ -76,7 +132,7 @@
                                 </g>
                             </svg>
                         </a>
-                        <a href="https://t.me/+79933643671" class="header__social-link" target="_blank"
+                        <a href="https://t.me/+79773011050" class="header__social-link" target="_blank"
                             rel="noopener noreferrer"><svg class="header__social-icon" version="1.0"
                                 xmlns="http://www.w3.org/2000/svg" width="46.000000pt" height="46.000000pt"
                                 viewBox="0 0 46.000000 46.000000" preserveAspectRatio="xMidYMid meet">
@@ -96,8 +152,10 @@
             </div>
             <!-- HERO -->
             <div class="hero">
-                <h1 class="hero__title1">"БУРЕЛОМ" - АЛМАЗНОЕ БУРЕНИЕ И РЕЗКА</h1>
                 <ul class="hero__list">
+                    <figcaption>
+                        <h1 class="hero__title1">"БУРЕЛОМ" - АЛМАЗНОЕ БУРЕНИЕ И РЕЗКА</h1>
+                    </figcaption>
                     <li class="hero__list-item">
                         <h3 class="hero__list-title3">
                             АЛМАЗНАЯ РЕЗКА - НАШЕ ПРИЗВАНИЕ:
@@ -142,1151 +200,1237 @@
         </div>
     </header>
 
-    <!-- PROMO BLOCK -->
-    <section class="promo">
-        <div class="container promo__inner">
-            <h2 class="promo__title2">От нарезки швов до сноса зданий – "БУРЕЛОМ" - решаем любые задачи!</h2>
-            <div class="promo__preferents">
-                <div class="promo__block">
-                    <h4>Мы предлагаем широкий спектр услуг по демонтажу, алмазной резке и бурению:</h4>
-                    <ul class="promo__list">
-                        <li class="promo__list-item">Нарезка температурных швов</li>
-                        <li class="promo__list-item">Демонтаж подоконных блоков и стен</li>
-                        <li class="promo__list-item">Сухое сверление бетона</li>
-                        <li class="promo__list-item">Устройство штроб под трубы</li>
-                        <li class="promo__list-item">Демонтаж форшахт</li>
-                        <li class="promo__list-item">Снос ж/б конструкций, мостов, зданий, резка балок</li>
-                        <li class="promo__list-item">И многое другое!</li>
-                    </ul>
-                </div>
-                <div class="promo__block">
-                    <h4 class="promo__title4">Преимущества:</h4>
-                    <ul class="promo__list">
-                        <li class="promo__list-item">Современный парк техники</li>
-                        <li class="promo__list-item">Профессиональное оборудование</li>
-                        <li class="promo__list-item">Гарантия своевременной замены оборудования</li>
-                        <li class="promo__list-item">Работаем в Москве и Московской области</li>
-                        <li class="promo__list-item">Бесплатный выезд для осмотра (Москва и МО)</li>
-                        <li class="promo__list-item">Возможны выезды в регионы (условия оговариваются индивидуально)
-                        </li>
-                        <li class="promo__list-item"><span class="promo__title4">Важно: </span>Уборка и оклейка
-                            конструкций оплачиваются отдельно.</li>
-                    </ul>
-                </div>
-            </div>
-            <p class="promo__text">Готовы обсудить ваш проект? <a href="#footer" class="promo__link">Свяжитесь с
-                    нами!</a></p>
-            <p class="promo__text2">БЕСПЛАТНЫЙ ОСМОТР В Г.МОСКВА, МОСКОВСКАЯ ОБЛАСТЬ, РАССМАТРИВАЕМ ВЫЕЗДЫ В ДРУГИЕ
-                РЕГИОНЫ</p>
-        </div>
-    </section>
+    <main>
+        <!-- CARDS -->
+        <section class="cards" id="prise">
+            <div class="container cards__inner">
+                <h2 class="accordion__title">ЦЕНЫ</h2>
 
-    <!-- CARDS -->
-    <section class="cards" id="cards">
-        <div class="container cards__inner">
-            <h2 class="cards__title2">ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</h2>
+                <!-- КАРТОЧКИ -->
+                <ul class="cards__list">
+                    <li class="cards__list-item" onclick="openModal('modal1')"><img class="cards__list-image"
+                            src="./img/proem.webp" alt="Алмазная резка и расширение проемов">
+                        <h3 class="cards__list-title3">АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ</h3>
+                    </li>
+                    <li class="cards__list-item" onclick="openModal('modal2')"><img class="cards__list-image"
+                            src="./img/perekritie.webp" alt="Алмазная резка перекрытий">
+                        <h3 class="cards__list-title3">АЛМАЗНАЯ РЕЗКА ДИСКОМ</h3>
+                    </li>
+                    <li class="cards__list-item" onclick="openModal('modal3')"><img class="cards__list-image"
+                            src="./img/kanat.webp" alt="Канатная резка">
+                        <h3 class="cards__list-title3">АЛМАЗНАЯ РЕЗКА ПРОЁМОВ</h3>
+                    </li>
+                    <li class="cards__list-item" onclick="openModal('modal4')"><img class="cards__list-image"
+                            src="./img/burenie.webp" alt="Алмазное бурение отверстий">
+                        <h3 class="cards__list-title3">КАНАТНАЯ РЕЗКА</h3>
+                    </li>
+                    <li class="cards__list-item" onclick="openModal('modal5')"><img class="cards__list-image"
+                            src="./img/usilenie.webp" alt="Усиление проемов металлом">
+                        <h3 class="cards__list-title3">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</h3>
+                    </li>
+                    <li class="cards__list-item" onclick="openModal('modal7')"><img class="cards__list-image"
+                            src="./img/demontazh.webp" alt="Демонтаж">
+                        <h3 class="cards__list-title3">ДЕМОНТАЖ, ИНЫЕ УСЛУГИ</h3>
+                    </li>
+                </ul>
 
-            <!-- КАРТОЧКИ -->
-            <ul class="cards__list">
-                <li class="cards__list-item" onclick="openModal('modal1')"><img class="cards__list-image"
-                        src="./img/proem.webp" alt="Алмазная резка и расширение проемов">
-                    <h3 class="cars__list-title3">АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ</h3>
-                </li>
-                <li class="cards__list-item" onclick="openModal('modal2')"><img class="cards__list-image"
-                        src="./img/perekritie.webp" alt="Алмазная резка перекрытий">
-                    <h3 class="cars__list-title3">АЛМАЗНАЯ РЕЗКА ПЕРЕКРЫТИЙ</h3>
-                </li>
-                <li class="cards__list-item" onclick="openModal('modal3')"><img class="cards__list-image"
-                        src="./img/kanat.webp" alt="Канатная резка">
-                    <h3 class="cars__list-title3">КАНАТНАЯ РЕЗКА</h3>
-                </li>
-                <li class="cards__list-item" onclick="openModal('modal4')"><img class="cards__list-image"
-                        src="./img/burenie.webp" alt="Алмазное бурение отверстий">
-                    <h3 class="cars__list-title3">АЛМАЗНОЕ БУРЕНИЕ ОТВЕРСТИЙ</h3>
-                </li>
-                <li class="cards__list-item" onclick="openModal('modal5')"><img class="cards__list-image"
-                        src="./img/usilenie.webp" alt="Усиление проемов металлом">
-                    <h3 class="cars__list-title3">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</h3>
-                </li>
-                <li class="cards__list-item" onclick="openModal('modal7')"><img class="cards__list-image"
-                        src="./img/demontazh.webp" alt="Демонтаж">
-                    <h3 class="cars__list-title3">ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ</h3>
-                </li>
-            </ul>
-
-            <!-- РЕЗКА ПРОЕМОВ -->
-            <div id="modal1" class="modal">
-                <div class="modal__content modal1__content">
-                    <img class="close" onclick="closeModal('modal1')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ</h2>
-                    <h3 class="modal__content-title3">Создаем проемы любой сложности и конфигурации в бетоне, кирпиче и
-                        железобетоне:</h3>
-                    <p class="modal__content-text">Дверные, оконные, вентиляционные. Под лестницы, лифты, грузы, ниши,
-                        штробы.</p>
-
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Методы:</h4>
-                            </li>
-                            <li class="modal__list-item">Алмазная резка диском, канатом, бурение</li>
-                            <li class="modal__list-item">Безопасный демонтаж частей</li>
-                            <li class="modal__list-item">Обрамление металлоконструкциями</li>
-                            <li class="modal__list-item">Возможна чистовая отделка</li>
-                            <li class="modal__list-item">С проектом или без</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Ключевые преимущества:</h4>
-                            </li>
-                            <li class="modal__list-item">Любая форма и размер проемов</li>
-                            <li class="modal__list-item">Аккуратность и чистота</li>
-                            <li class="modal__list-item">Безопасность операторов</li>
-                            <li class="modal__list-item">Ровный рез без доработки</li>
-                            <li class="modal__list-item">Высокая скорость и доступная цена</li>
-                        </ul>
-                    </div>
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">Зависит от материала, толщины, размера и длины реза.</li>
-                            <li class="modal__list-item">Узнайте точную стоимость у менеджера или посмотрите прайс-лист.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Закажите алмазную резку проемов в “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ И РАСШИРЕНИЕ ПРОЕМОВ</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- РЕЗКА ПЕРЕКРЫТИЙ -->
-            <div id="modal2" class="modal">
-                <div class="modal__content modal2__content">
-                    <img class="close" onclick="closeModal('modal2')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">АЛМАЗНАЯ РЕЗКА ПЕРЕКРЫТИЙ</h2>
-                    <h3 class="modal__content-title3">Мы используем современные алмазные инструменты для резки бетонных
-                        перекрытий, обеспечивая:</h3>
-                    <div class="modal__block">
-                        <ul class="modal__list modal__list2">
-                            <li>
-                                <h4 class="modal__title4">Высокую эффективность и скорость:</h4>
-                            </li>
-                            <li class="modal__list-item">Забудьте о перфораторах! Алмазные коронки и пилы режут быстро и
-                                точно, не требуя частой замены инструмента.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Формирование проемов любой формы и размера:</h4>
-                            </li>
-                            <li class="modal__list-item">Отверстия любой конфигурации, идеально ровные края.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Безопасность и аккуратность:</h4>
-                            </li>
-                            <li class="modal__list-item">Работаем чисто, с минимальным количеством пыли и гарантируем
-                                безопасность операторов.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный риск:</h4>
-                            </li>
-                            <li class="modal__list-item">Применяем страховочные конструкции для предотвращения обрушения
-                                плиты.</li>
-                        </ul>
-                    </div>
-
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Резка перекрытий:</h4>
-                            </li>
-                            <li class="modal__list-item">Зависит от материала, толщины, размера и длины реза.</li>
-                            <li class="modal__list-item">Узнайте точную стоимость у менеджера или посмотрите прайс-лист.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Закажите алмазную резку перекрытий в “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ПЕРЕКРЫТИЙ</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- КАНАТНАЯ РЕЗКА -->
-            <div id="modal3" class="modal">
-                <div class="modal__content modal3__content">
-                    <img class="close" onclick="closeModal('modal3')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">КАНАТНАЯ РЕЗКА</h2>
-                    <h3 class="modal__content-title3">Канатная резка бетона: Мощная технология для сложных задач!
-                    </h3>
-                    <div class="modal__block">
-                        <ul class="modal__list modal__list3">
-                            <li>
-                                <h4 class="modal__title4">Как это работает:</h4>
-                            </li>
-                            <li class="modal__list-item">Для пропуска каната в конструкции предварительно бурятся
-                                отверстия алмазными сверлами. Сам канат представляет собой стальной трос
-                                с алмазными втулками, изготовленными по передовым технологиям, гарантируя высокое
-                                качество и надежность.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Важно знать!</h4>
-                            </li>
-                            <li class="modal__list-item">Канатная резка - идеальна для демонтажа мостов, дамб,
-                                фундаментов, стен и других крупных сооружений.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Канатная резка особенно эффективна в случаях, когда
-                                    необходимо:</h4>
-                            </li>
-                            <li class="modal__list-item">Резка на большой глубине или в труднодоступных местах.</li>
-                            <li class="modal__list-item">
-                                Сохранение целостности окружающей конструкции (минимальные вибрации).
-                            </li>
-                            <li class="modal__list-item">Работать в условиях ограниченного пространства.</li>
-                        </ul>
-                    </div>
-
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Канатная резка:</h4>
-                            </li>
-                            <li class="modal__list-item">Зависит от материала, толщины, размера и длины реза.</li>
-                            <li class="modal__list-item">Узнайте точную стоимость у менеджера или посмотрите
-                                прайс-лист.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной
-                                инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Закажите канатную резку в “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="#prise">ЦЕНЫ КАНАТНУЮ РЕЗКУ</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- БУРЕНИЕ ОТВЕРСТИЙ -->
-            <div id="modal4" class="modal">
-                <div class="modal__content modal4__content">
-                    <img class="close" onclick="closeModal('modal4')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">АЛМАЗНОЕ БУРЕНИЕ ОТВЕРСТИЙ</h2>
-                    <h3 class="modal__content-title3">Алмазное бурение: точные отверстия быстро и безопасно!</h3>
-
-                    <!-- Верхний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list modal__list4">
-                            <li>
-                                <h4 class="modal__title4">Применение:</h4>
-                            </li>
-                            <li class="modal__list-item">Водоснабжение, отопление, вентиляция, кондиционирование,
-                                сантехника, бассейны.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Виды бурения: </h4>С водой, сухое, под углом и другие.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Точность: </h4>Ровные отверстия без сколов.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Универсальность: </h4>Любые углы и положения.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Скорость: </h4>В 2 раза быстрее.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Безопасность: </h4>Тихая работа, минимум пыли и вибрации.
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Нижний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Бурение отверстий:</h4>
-                            </li>
-                            <li class="modal__list-item">Диаметра, материала, сложности и объема.</li>
-                            <li class="modal__list-item">Узнайте точную стоимость у менеджера или посмотрите
-                                прайс-лист.
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной
-                                инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Закажите алмазное бурение в “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="">ЦЕНЫ НА БУРЕНИЕ ОТВЕРСТИЙ</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ -->
-            <div id="modal5" class="modal">
-                <div class="modal__content modal5__content">
-                    <img class="close" onclick="closeModal('modal5')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</h2>
-                    <h3 class="modal__content-title3">Усиление проемов: Безопасность и надежность вашего проекта</h3>
-
-                    <!-- Верхний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list modal__list5">
-                            <li>
-                                <h4 class="modal__title4">Зачем это нужно?</h4>
-                            </li>
-                            <li class="modal__list-item">Усиление необходимо при создании или расширении проемов,
-                                чтобы сохранить несущую способность стены и обеспечить безопасность конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Что мы предлагаем:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                Усиление проемов в несущих стенах.
-                            </li>
-                            <li class="modal__list-item">
-                                Усиление уголком (для панельных домов, кирпичных и пеноблочных стен).
-                            </li>
-                            <li class="modal__list-item">
-                                Усиление швеллером (для несущих панельных стен и перекрытий).
-                            </li>
-                            <li class="modal__list-item">
-                                Комбинированное усиление (для сложных архитектурных решений и толстых стен).
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Нижний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Выбор усиления зависит:</h4>
-                            </li>
-                            <li class="modal__list-item">от материала стены, размера проема и нагрузки.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной
-                                инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Закажите усиление проемов металлом в “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="#prise">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ -->
-            <div id="modal7" class="modal">
-                <div class="modal__content modal7__content">
-                    <img class="close" onclick="closeModal('modal7')" src="./img/cloze.svg" alt="">
-                    <h2 class="modal__content-title2">ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ</h2>
-                    <h3 class="modal__content-title3">Демонтаж бетона и ж/б конструкций</h3>
-
-                    <!-- Верхний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list modal__list7">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Технологии демонтажа:</h4>
-                            </li>
-                            <li class="modal__list-item">
-                                Алмазная резка стенорезными машинами:
-                                Распил сильно армированных ж/б стен и перекрытий с использованием воды
-                                для охлаждения диска, уменьшения пыли и получения чистого реза.
-                            </li>
-                            <li class="modal__list-item">
-                                Разрушение на фрагменты: Резка конструкции на части с последующим
-                                удалением с помощью подъемных механизмов.
-                            </li>
-                        </ul>
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Профессиональный демонтаж бетонных и железобетонных
-                                    конструкций
-                                    любой сложности. Имеем все необходимые допуски и применяем
-                                    современную технику, включая алмазную резку.</h4>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Нижний блок -->
-                    <div class="modal__block">
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Цена:</h4>
-                            </li>
-                            <li class="modal__list-item">Вы оплачиваете только стоимость работ по резке и усилению
-                                проема.
-                                Расходы на согласование перепланировки оплачиваются отдельно.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Минимальный выезд:</h4>
-                            </li>
-                            <li class="modal__list-item">В пределах МКАД: от 9 000 ₽</li>
-                            <li class="modal__list-item">За МКАД: от 10 000 ₽</li>
-                            <li class="modal__list-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                            <li class="modal__list-item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                            <li class="modal__list-item">Рассматриваем выезд в регионы</li>
-                        </ul>
-
-                        <ul class="modal__list">
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Как мы работаем:</h4>
-                            </li>
-                            <li class="modal__list-item">Используем стационарные станки и компактный ручной
-                                инструмент.
-                            </li>
-                            <li class="modal__list-item">Соблюдаем технику безопасности и применяем страховочные
-                                конструкции.</li>
-                            <li class="modal__list-item">
-                                <h4 class="modal__title4">Сделайте демонтаж конструкций с “БУРЕЛОМ”:</h4>
-                            </li>
-                            <li class="modal__list-item">Цена зависит от объема и сложности работ.</li>
-                            <li class="modal__list-item">Для консультации и заказа звоните нашим менеджерам.</li>
-                        </ul>
-                        <a class="modal__link" href="#prise">ЦЕНЫ ДЕМОНТАЖ КОНСТРУКЦИЙ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ПРАЙС-ЛИСТ -->
-    <section id="prise" class="prise">
-        <div class="container prise__inner">
-            <h2 class=" prise__title2">ПРАЙС-ЛИСТ</h2>
-            <ul class="prise__acc">
                 <!-- АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <h4 class="prise__acc-title4">Стоимость указана в рублях, за сантиметр погонный бурения.</h4>
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">&Oslash;</th>
-                                    <th class="prise__list-column">Бетон/ФБС</th>
-                                    <th class="prise__list-column">Ж/Б</th>
-                                    <th class="prise__list-column">Кирпич</th>
-                                    <th class="prise__list-column">Пеноблок</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">32</td>
-                                    <td class="prise__list-column">33&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                    <td class="prise__list-column">25&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">42</td>
-                                    <td class="prise__list-column">33&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                    <td class="prise__list-column">25&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">52</td>
-                                    <td class="prise__list-column">33&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                    <td class="prise__list-column">25&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">62</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">38&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">72</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">38&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">82</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">38&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                    <td class="prise__list-column">30&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">102</td>
-                                    <td class="prise__list-column">42&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                    <td class="prise__list-column">40&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">122</td>
-                                    <td class="prise__list-column">42&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                    <td class="prise__list-column">40&#8381;/см.</td>
-                                    <td class="prise__list-column">35&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">132</td>
-                                    <td class="prise__list-column">48&#8381;/см.</td>
-                                    <td class="prise__list-column">50&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                    <td class="prise__list-column">40&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">142</td>
-                                    <td class="prise__list-column">48&#8381;/см.</td>
-                                    <td class="prise__list-column">50&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                    <td class="prise__list-column">40&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">152</td>
-                                    <td class="prise__list-column">53&#8381;/см.</td>
-                                    <td class="prise__list-column">55&#8381;/см.</td>
-                                    <td class="prise__list-column">50&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">162</td>
-                                    <td class="prise__list-column">53&#8381;/см.</td>
-                                    <td class="prise__list-column">55&#8381;/см.</td>
-                                    <td class="prise__list-column">50&#8381;/см.</td>
-                                    <td class="prise__list-column">45&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">182</td>
-                                    <td class="prise__list-column">57&#8381;/см.</td>
-                                    <td class="prise__list-column">60&#8381;/см.</td>
-                                    <td class="prise__list-column">55&#8381;/см.</td>
-                                    <td class="prise__list-column">50&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">202</td>
-                                    <td class="prise__list-column">72&#8381;/см.</td>
-                                    <td class="prise__list-column">75&#8381;/см.</td>
-                                    <td class="prise__list-column">70&#8381;/см.</td>
-                                    <td class="prise__list-column">65&#8381;/см.</td>
-                                <tr>
-                                    <td class="prise__list-column">225</td>
-                                    <td class="prise__list-column">82&#8381;/см.</td>
-                                    <td class="prise__list-column">85&#8381;/см.</td>
-                                    <td class="prise__list-column">80&#8381;/см.</td>
-                                    <td class="prise__list-column">75&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">250</td>
-                                    <td class="prise__list-column">92&#8381;/см.</td>
-                                    <td class="prise__list-column">95&#8381;/см.</td>
-                                    <td class="prise__list-column">90&#8381;/см.</td>
-                                    <td class="prise__list-column">85&#8381;/см.</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">300</td>
-                                    <td class="prise__list-column">135&#8381;/см.</td>
-                                    <td class="prise__list-column">140&#8381;/см.</td>
-                                    <td class="prise__list-column">100&#8381;/см.</td>
-                                    <td class="prise__list-column">95&#8381;/см.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p>
-
+                <div id="modal1" class="modal">
+                    <div class="modal__content modal1__content">
+                        <img class="close" onclick="closeModal('modal1')" src="./img/cloze.svg"
+                            alt="закрыть окно алмазное бурение коронкой">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ</h2>
+                        <div class="modal__prise-content">
+                            <h4 class="modal__prise-title4">Стоимость указана в рублях, за сантиметр погонный бурения.
+                            </h4>
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">&Oslash;</th>
+                                        <th class="modal__prise-list-column">Бетон/ФБС</th>
+                                        <th class="modal__prise-list-column">Ж/Б</th>
+                                        <th class="modal__prise-list-column">Кирпич</th>
+                                        <th class="modal__prise-list-column">Пеноблок</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">32</td>
+                                        <td class="modal__prise-list-column">33&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">25&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">42</td>
+                                        <td class="modal__prise-list-column">33&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">25&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">52</td>
+                                        <td class="modal__prise-list-column">33&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">25&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">62</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">38&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">72</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">38&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">82</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">38&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">30&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">102</td>
+                                        <td class="modal__prise-list-column">42&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">40&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">122</td>
+                                        <td class="modal__prise-list-column">42&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">40&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">35&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">132</td>
+                                        <td class="modal__prise-list-column">48&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">50&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">40&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">142</td>
+                                        <td class="modal__prise-list-column">48&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">50&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">40&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">152</td>
+                                        <td class="modal__prise-list-column">53&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">55&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">50&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">162</td>
+                                        <td class="modal__prise-list-column">53&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">55&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">50&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">45&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">182</td>
+                                        <td class="modal__prise-list-column">57&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">60&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">55&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">50&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">202</td>
+                                        <td class="modal__prise-list-column">72&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">75&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">70&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">65&#8381;/см.</td>
+                                    <tr>
+                                        <td class="modal__prise-list-column">225</td>
+                                        <td class="modal__prise-list-column">82&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">85&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">80&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">75&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">250</td>
+                                        <td class="modal__prise-list-column">92&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">95&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">90&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">85&#8381;/см.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">300</td>
+                                        <td class="modal__prise-list-column">135&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">140&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">100&#8381;/см.</td>
+                                        <td class="modal__prise-list-column">95&#8381;/см.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="modal__prise-list-column modal__prise-list-column--mobile">
+                                12000р. м<sup>2</sup> резка бетона.<br>
+                                10000р. м<sup>2</sup> резка кирпича.<br>
+                                С учетом толщины 20см.<br>
+                                Резка 1п.м. бетона толщиной 20см 2400р.<br>
+                                Резка 1п.м. кирпича толщиной 20см 2400р.
+                            </p>
+                        </div>
                     </div>
-                </li>
+                </div>
+
                 <!-- АЛМАЗНАЯ РЕЗКА ДИСКОМ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">АЛМАЗНАЯ РЕЗКА ДИСКОМ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <h4 class="prise__acc-title4">Стоимость указана в рублях, за метр погонный резки.</h4>
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">Толщина см.</th>
-                                    <th class="prise__list-column">Монолит/Ж/Б</th>
-                                    <th class="prise__list-column">Панель/ФБС</th>
-                                    <th class="prise__list-column">Кирпич</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">до 10см.</td>
-                                    <td class="prise__list-column">900&#8381;</td>
-                                    <td class="prise__list-column">800&#8381;</td>
-                                    <td class="prise__list-column">600&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 12см.</td>
-                                    <td class="prise__list-column">1100&#8381;</td>
-                                    <td class="prise__list-column">1000&#8381;</td>
-                                    <td class="prise__list-column">700&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 14см.</td>
-                                    <td class="prise__list-column">1400&#8381;</td>
-                                    <td class="prise__list-column">1100&#8381;</td>
-                                    <td class="prise__list-column">800&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 18см.</td>
-                                    <td class="prise__list-column">1600&#8381;</td>
-                                    <td class="prise__list-column">1300&#8381;</td>
-                                    <td class="prise__list-column">900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 22см.</td>
-                                    <td class="prise__list-column">1800&#8381;</td>
-                                    <td class="prise__list-column">1500&#8381;</td>
-                                    <td class="prise__list-column">1000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 25см.</td>
-                                    <td class="prise__list-column">2200&#8381;</td>
-                                    <td class="prise__list-column">2000&#8381;</td>
-                                    <td class="prise__list-column">2000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 30см.</td>
-                                    <td class="prise__list-column">2800&#8381;</td>
-                                    <td class="prise__list-column">2500&#8381;</td>
-                                    <td class="prise__list-column">2200&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 35см.</td>
-                                    <td class="prise__list-column">3400&#8381;</td>
-                                    <td class="prise__list-column">3200&#8381;</td>
-                                    <td class="prise__list-column">2400&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 40см.</td>
-                                    <td class="prise__list-column">3800&#8381;</td>
-                                    <td class="prise__list-column">3700&#8381;</td>
-                                    <td class="prise__list-column">3500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 50см.</td>
-                                    <td class="prise__list-column">4800&#8381;</td>
-                                    <td class="prise__list-column">4500&#8381;</td>
-                                    <td class="prise__list-column">2900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 57см.</td>
-                                    <td class="prise__list-column">5900&#8381;</td>
-                                    <td class="prise__list-column">5100&#8381;</td>
-                                    <td class="prise__list-column">3400&#8381;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p> -->
+                <div id="modal2" class="modal">
+                    <div class="modal__content modal2__content">
+                        <img class="close" onclick="closeModal('modal2')" src="./img/cloze.svg"
+                            alt="закрыть окно алмазная резка диском">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ДИСКОМ</h2>
+                        <div class="modal__prise-content">
+                            <h4 class="modal__prise-title4">Стоимость указана в рублях, за метр погонный резки.</h4>
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">Толщина см.</th>
+                                        <th class="modal__prise-list-column">Монолит/Ж/Б</th>
+                                        <th class="modal__prise-list-column">Панель/ФБС</th>
+                                        <th class="modal__prise-list-column">Кирпич</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 10см.</td>
+                                        <td class="modal__prise-list-column">900&#8381;</td>
+                                        <td class="modal__prise-list-column">800&#8381;</td>
+                                        <td class="modal__prise-list-column">600&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 12см.</td>
+                                        <td class="modal__prise-list-column">1100&#8381;</td>
+                                        <td class="modal__prise-list-column">1000&#8381;</td>
+                                        <td class="modal__prise-list-column">700&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 14см.</td>
+                                        <td class="modal__prise-list-column">1400&#8381;</td>
+                                        <td class="modal__prise-list-column">1100&#8381;</td>
+                                        <td class="modal__prise-list-column">800&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 18см.</td>
+                                        <td class="modal__prise-list-column">1600&#8381;</td>
+                                        <td class="modal__prise-list-column">1300&#8381;</td>
+                                        <td class="modal__prise-list-column">900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 22см.</td>
+                                        <td class="modal__prise-list-column">1800&#8381;</td>
+                                        <td class="modal__prise-list-column">1500&#8381;</td>
+                                        <td class="modal__prise-list-column">1000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 25см.</td>
+                                        <td class="modal__prise-list-column">2200&#8381;</td>
+                                        <td class="modal__prise-list-column">2000&#8381;</td>
+                                        <td class="modal__prise-list-column">2000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 30см.</td>
+                                        <td class="modal__prise-list-column">2800&#8381;</td>
+                                        <td class="modal__prise-list-column">2500&#8381;</td>
+                                        <td class="modal__prise-list-column">2200&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 35см.</td>
+                                        <td class="modal__prise-list-column">3400&#8381;</td>
+                                        <td class="modal__prise-list-column">3200&#8381;</td>
+                                        <td class="modal__prise-list-column">2400&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 40см.</td>
+                                        <td class="modal__prise-list-column">3800&#8381;</td>
+                                        <td class="modal__prise-list-column">3700&#8381;</td>
+                                        <td class="modal__prise-list-column">3500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 50см.</td>
+                                        <td class="modal__prise-list-column">4800&#8381;</td>
+                                        <td class="modal__prise-list-column">4500&#8381;</td>
+                                        <td class="modal__prise-list-column">2900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 57см.</td>
+                                        <td class="modal__prise-list-column">5900&#8381;</td>
+                                        <td class="modal__prise-list-column">5100&#8381;</td>
+                                        <td class="modal__prise-list-column">3400&#8381;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="modal__prise-list-column modal__prise-list-column--mobile">
+                                12000р. м<sup>2</sup> резка бетона.<br>
+                                10000р. м<sup>2</sup> резка кирпича.<br>
+                                С учетом толщины 20см.<br>
+                                Резка 1п.м. бетона толщиной 20см 2400р.<br>
+                                Резка 1п.м. кирпича толщиной 20см 2400р.
+                            </p>
+                        </div>
                     </div>
-                </li>
+                </div>
+
                 <!-- АЛМАЗНАЯ РЕЗКА ПРОЕМОВ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">АЛМАЗНАЯ РЕЗКА ПРОЕМОВ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <h4 class="prise__acc-title4">Стоимость указана в рублях, за резку стандартного проема
-                            2100х900мм, на части до 40кг.</h4>
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">Толщина см.</th>
-                                    <th class="prise__list-column">Монолит/Ж/Б</th>
-                                    <th class="prise__list-column">Панель/ФБС</th>
-                                    <th class="prise__list-column">Кирпич</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">до 10см.</td>
-                                    <td class="prise__list-column">10000&#8381;</td>
-                                    <td class="prise__list-column">8000&#8381;</td>
-                                    <td class="prise__list-column">5000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 12см.</td>
-                                    <td class="prise__list-column">12000&#8381;</td>
-                                    <td class="prise__list-column">10000&#8381;</td>
-                                    <td class="prise__list-column">6000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 14см.</td>
-                                    <td class="prise__list-column">14000&#8381;</td>
-                                    <td class="prise__list-column">12000&#8381;</td>
-                                    <td class="prise__list-column">6500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 18см.</td>
-                                    <td class="prise__list-column">20000&#8381;</td>
-                                    <td class="prise__list-column">15000&#8381;</td>
-                                    <td class="prise__list-column">7000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 22см.</td>
-                                    <td class="prise__list-column">22000&#8381;</td>
-                                    <td class="prise__list-column">17500&#8381;</td>
-                                    <td class="prise__list-column">8500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 25см.</td>
-                                    <td class="prise__list-column">27000&#8381;</td>
-                                    <td class="prise__list-column">19000&#8381;</td>
-                                    <td class="prise__list-column">10500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 30см.</td>
-                                    <td class="prise__list-column">35000&#8381;</td>
-                                    <td class="prise__list-column">26000&#8381;</td>
-                                    <td class="prise__list-column">15000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 35см.</td>
-                                    <td class="prise__list-column">42000&#8381;</td>
-                                    <td class="prise__list-column">28000&#8381;</td>
-                                    <td class="prise__list-column">18000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 40см.</td>
-                                    <td class="prise__list-column">57000&#8381;</td>
-                                    <td class="prise__list-column">32000&#8381;</td>
-                                    <td class="prise__list-column">22000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 50см.</td>
-                                    <td class="prise__list-column">68000&#8381;</td>
-                                    <td class="prise__list-column">52000&#8381;</td>
-                                    <td class="prise__list-column">28000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">до 60см.</td>
-                                    <td class="prise__list-column">78000&#8381;</td>
-                                    <td class="prise__list-column">62000&#8381;</td>
-                                    <td class="prise__list-column">30000&#8381;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p> -->
+                <div id="modal3" class="modal">
+                    <div class="modal__content modal3__content">
+                        <img class="close" onclick="closeModal('modal3')" src="./img/cloze.svg"
+                            alt="закрыть окно АЛМАЗНАЯ РЕЗКА ПРОЕМОВ">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ПРОЕМОВ</h2>
+                        <div class="modal__prise-content">
+                            <h4 class="modal__prise-title4">Стоимость указана в рублях, за резку стандартного проема
+                                2100х900мм, на части до 40кг.</h4>
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">Толщина см.</th>
+                                        <th class="modal__prise-list-column">Монолит/Ж/Б</th>
+                                        <th class="modal__prise-list-column">Панель/ФБС</th>
+                                        <th class="modal__prise-list-column">Кирпич</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 10см.</td>
+                                        <td class="modal__prise-list-column">10000&#8381;</td>
+                                        <td class="modal__prise-list-column">8000&#8381;</td>
+                                        <td class="modal__prise-list-column">5000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 12см.</td>
+                                        <td class="modal__prise-list-column">12000&#8381;</td>
+                                        <td class="modal__prise-list-column">10000&#8381;</td>
+                                        <td class="modal__prise-list-column">6000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 14см.</td>
+                                        <td class="modal__prise-list-column">14000&#8381;</td>
+                                        <td class="modal__prise-list-column">12000&#8381;</td>
+                                        <td class="modal__prise-list-column">6500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 18см.</td>
+                                        <td class="modal__prise-list-column">20000&#8381;</td>
+                                        <td class="modal__prise-list-column">15000&#8381;</td>
+                                        <td class="modal__prise-list-column">7000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 22см.</td>
+                                        <td class="modal__prise-list-column">22000&#8381;</td>
+                                        <td class="modal__prise-list-column">17500&#8381;</td>
+                                        <td class="modal__prise-list-column">8500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 25см.</td>
+                                        <td class="modal__prise-list-column">27000&#8381;</td>
+                                        <td class="modal__prise-list-column">19000&#8381;</td>
+                                        <td class="modal__prise-list-column">10500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 30см.</td>
+                                        <td class="modal__prise-list-column">35000&#8381;</td>
+                                        <td class="modal__prise-list-column">26000&#8381;</td>
+                                        <td class="modal__prise-list-column">15000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 35см.</td>
+                                        <td class="modal__prise-list-column">42000&#8381;</td>
+                                        <td class="modal__prise-list-column">28000&#8381;</td>
+                                        <td class="modal__prise-list-column">18000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 40см.</td>
+                                        <td class="modal__prise-list-column">57000&#8381;</td>
+                                        <td class="modal__prise-list-column">32000&#8381;</td>
+                                        <td class="modal__prise-list-column">22000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 50см.</td>
+                                        <td class="modal__prise-list-column">68000&#8381;</td>
+                                        <td class="modal__prise-list-column">52000&#8381;</td>
+                                        <td class="modal__prise-list-column">28000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">до 60см.</td>
+                                        <td class="modal__prise-list-column">78000&#8381;</td>
+                                        <td class="modal__prise-list-column">62000&#8381;</td>
+                                        <td class="modal__prise-list-column">30000&#8381;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="modal__prise-list-column modal__prise-list-column--mobile">
+                                12000р. м<sup>2</sup> резка бетона.<br>
+                                10000р. м<sup>2</sup> резка кирпича.<br>
+                                С учетом толщины 20см.<br>
+                                Резка 1п.м. бетона толщиной 20см 2400р.<br>
+                                Резка 1п.м. кирпича толщиной 20см 2400р.
+                            </p>
+                        </div>
                     </div>
-                </li>
-                <!-- АЛМАЗНАЯ РЕЗКА КАНАТОМ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">АЛМАЗНАЯ РЕЗКА КАНАТОМ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <!-- <h4 class="prise__acc-title4">Стоимость указана в рублях, за резку стандартного проема 2100х900мм, на части до 40кг.</h4> -->
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">Материал</th>
-                                    <th class="prise__list-column">Цена, за м.кв.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">Бетон</td>
-                                    <td class="prise__list-column">14000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Кирпич</td>
-                                    <td class="prise__list-column">9000&#8381;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p> -->
+                </div>
+
+                <!-- КАНАТНАЯ РЕЗКА -->
+                <div id="modal4" class="modal">
+                    <div class="modal__content modal4__content">
+                        <img class="close" onclick="closeModal('modal4')" src="./img/cloze.svg"
+                            alt="ЗАКРЫТЬ ОКНО КАНАТНАЯ РЕЗКА">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА КАНАТНУЮ РЕЗКУ</h2>
+                        <div class="modal__prise-content">
+                            <!-- <h4 class="modal__prise-title4">Стоимость указана в рублях, за резку стандартного проема 2100х900мм, на части до 40кг.</h4> -->
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">Материал</th>
+                                        <th class="modal__prise-list-column">Цена, за м.кв.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Бетон</td>
+                                        <td class="modal__prise-list-column">14000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Кирпич</td>
+                                        <td class="modal__prise-list-column">9000&#8381;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="modal__prise-list-column modal__prise-list-column--mobile">
+                                12000р. м<sup>2</sup> резка бетона.<br>
+                                10000р. м<sup>2</sup> резка кирпича.<br>
+                                С учетом толщины 20см.<br>
+                                Резка 1п.м. бетона толщиной 20см 2400р.<br>
+                                Резка 1п.м. кирпича толщиной 20см 2400р.
+                            </p>
+                        </div>
                     </div>
-                </li>
-                <!-- УСИЛЕНИЕ ПРОЕМОВ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">УСИЛЕНИЕ ПРОЕМОВ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <h4 class="prise__acc-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.
-                        </h4>
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">Вид усиления</th>
-                                    <th class="prise__list-column">Цена м.пог.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">14-16 швеллер в один ряд</td>
-                                    <td class="prise__list-column">1500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">18-20 швеллер в один ряд</td>
-                                    <td class="prise__list-column">1800&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">22-24 швеллер в один ряд</td>
-                                    <td class="prise__list-column">2000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">12 швеллер в два ряда</td>
-                                    <td class="prise__list-column">2900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">14 швеллер в два ряда</td>
-                                    <td class="prise__list-column">3300&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">16 швеллер в два ряда</td>
-                                    <td class="prise__list-column">4300&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">18 швеллер в два ряда</td>
-                                    <td class="prise__list-column">4900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">20 швеллер в два ряда</td>
-                                    <td class="prise__list-column">5400&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">22 швеллер в два ряда</td>
-                                    <td class="prise__list-column">5900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">24 швеллер в два ряда</td>
-                                    <td class="prise__list-column">6900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 63 мм</td>
-                                    <td class="prise__list-column">1500&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 75 мм</td>
-                                    <td class="prise__list-column">2000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 100 мм</td>
-                                    <td class="prise__list-column">2600&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 125 мм</td>
-                                    <td class="prise__list-column">3800&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 140 мм</td>
-                                    <td class="prise__list-column">4900&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Окантовка уголком 160 мм</td>
-                                    <td class="prise__list-column">6900&#8381;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p> -->
+                </div>
+
+                <!-- УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ -->
+                <div id="modal5" class="modal">
+                    <div class="modal__content modal5__content">
+                        <img class="close" onclick="closeModal('modal5')" src="./img/cloze.svg"
+                            alt="ЗАКРЫТЬ ОКНО УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</h2>
+                        <div class="modal__prise-content">
+                            <h4 class="modal__prise-title4">Указана минимальная стоимость в рублях, за метр погонный
+                                усиления.
+                            </h4>
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">Вид усиления</th>
+                                        <th class="modal__prise-list-column">Цена м.пог.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">14-16 швеллер в один ряд</td>
+                                        <td class="modal__prise-list-column">1500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">18-20 швеллер в один ряд</td>
+                                        <td class="modal__prise-list-column">1800&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">22-24 швеллер в один ряд</td>
+                                        <td class="modal__prise-list-column">2000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">12 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">2900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">14 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">3300&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">16 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">4300&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">18 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">4900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">20 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">5400&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">22 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">5900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">24 швеллер в два ряда</td>
+                                        <td class="modal__prise-list-column">6900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 63 мм</td>
+                                        <td class="modal__prise-list-column">1500&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 75 мм</td>
+                                        <td class="modal__prise-list-column">2000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 100 мм</td>
+                                        <td class="modal__prise-list-column">2600&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 125 мм</td>
+                                        <td class="modal__prise-list-column">3800&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 140 мм</td>
+                                        <td class="modal__prise-list-column">4900&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Окантовка уголком 160 мм</td>
+                                        <td class="modal__prise-list-column">6900&#8381;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="modal__prise-list-column modal__prise-list-column--mobile">
+                                12000р. м<sup>2</sup> резка бетона.<br>
+                                10000р. м<sup>2</sup> резка кирпича.<br>
+                                С учетом толщины 20см.<br>
+                                Резка 1п.м. бетона толщиной 20см 2400р.<br>
+                                Резка 1п.м. кирпича толщиной 20см 2400р.
+                            </p>
+                        </div>
                     </div>
-                </li>
-                <!-- ДЕМОНТАЖ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">ДЕМОНТАЖ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <!-- <h4 class="prise__acc-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.</h4> -->
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <th class="prise__list-column">Материал</th>
-                                    <th class="prise__list-column">Цена м.куб.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">Бетонные конструкции</td>
-                                    <td class="prise__list-column">15000&#8381;</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Кирпич</td>
-                                    <td class="prise__list-column">6000&#8381;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                            12000р. м<sup>2</sup> резка бетона.<br>
-                            10000р. м<sup>2</sup> резка кирпича.<br>
-                            С учетом толщины 20см.<br>
-                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                        </p> -->
+                </div>
+
+                <!-- ДЕМОНТАЖ, ИНЫЕ УСЛУГИ -->
+                <div id="modal7" class="modal">
+                    <div class="modal__content modal7__content">
+                        <img class="close" onclick="closeModal('modal7')" src="./img/cloze.svg"
+                            alt="ЗАКРЫТЬ ОКНО ДЕМОНТАЖ И ИНЫЕ УСЛУГИ">
+                        <h2 class="modal__content-title2">ЦЕНЫ НА ДЕМОНТАЖ И ИНЫЕ УСЛУГИ</h2>
+                        <div class="modal__prise-content">
+                            <!-- <h4 class="modal__prise-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.</h4> -->
+                            <table class="modal__prise-list">
+                                <thead>
+                                    <tr>
+                                        <th class="modal__prise-list-column">Материал</th>
+                                        <th class="modal__prise-list-column">Цена м.куб.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Бетонные конструкции</td>
+                                        <td class="modal__prise-list-column">15000&#8381;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="modal__prise-list-column">Кирпич</td>
+                                        <td class="modal__prise-list-column">6000&#8381;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="modal__prise-content">
+                                <!-- <h4 class="modal__prise-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.</h4> -->
+                                <table class="modal__prise-list">
+                                    <thead>
+                                        <tr>
+                                            <td class="modal__prise-list-column">Заказ 8куб. контейнера</td>
+                                            <td class="modal__prise-list-column">8800&#8381;</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="modal__prise-list-column">Вывоз мусора</td>
+                                            <td class="modal__prise-list-column">цена обговаривается</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="modal__prise-list-column">Чистовые работы</td>
+                                            <td class="modal__prise-list-column">1.2 коэф. от стоимости заказа</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="modal__prise-list-column">Укрывные работы</td>
+                                            <td class="modal__prise-list-column">1.2 коэф. от стоимости заказа</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <!-- ИНЫЕ УСЛУГИ -->
-                <li class="prise__acc-item">
-                    <a class="prise__acc-btn">ИНЫЕ УСЛУГИ
-                        <img class="prise__acc-image" src="./img/cloze.svg" alt="Закрыть">
-                    </a>
-                    <div class="prise__acc-content">
-                        <!-- <h4 class="prise__acc-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.</h4> -->
-                        <table class="prise__list">
-                            <thead>
-                                <tr>
-                                    <td class="prise__list-column">Заказ 8куб. контейнера</td>
-                                    <td class="prise__list-column">8800&#8381;</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="prise__list-column">Вывоз мусора</td>
-                                    <td class="prise__list-column">цена обговаривается</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Чистовые работы</td>
-                                    <td class="prise__list-column">1.2 коэф. от стоимости заказа</td>
-                                </tr>
-                                <tr>
-                                    <td class="prise__list-column">Укрывные работы</td>
-                                    <td class="prise__list-column">1.2 коэф. от стоимости заказа</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- <p class="prise__list-column prise__list-column--mobile">
-                                            12000р. м<sup>2</sup> резка бетона.<br>
-                                            10000р. м<sup>2</sup> резка кирпича.<br>
-                                            С учетом толщины 20см.<br>
-                                            Резка 1п.м. бетона толщиной 20см 2400р.<br>
-                                            Резка 1п.м. кирпича толщиной 20см 2400р.
-                                        </p> -->
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Описание -->
+
+        <section class="accordion" id="accordion" data-schema="FAQPage">
+            <div class="accordion__inner">
+                <h2 class="accordion__title">ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</h2>
+                <ul class="accordion__list">
+                    <!-- АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Закрыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Создаем проемы любой сложности и конфигурации в бетоне, кирпиче и
+                                железобетоне:</h3>
+                            <p class="content__text">Дверные, оконные, вентиляционные. Под лестницы, лифты, грузы, ниши,
+                                штробы.</p>
+
+                            <div class="content__block">
+                                <ul class="content__list content__list--methods">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Методы:</h4>
+                                    </li>
+                                    <li class="content__item">Алмазная резка диском, канатом, бурение</li>
+                                    <li class="content__item">Безопасный демонтаж частей</li>
+                                    <li class="content__item">Обрамление металлоконструкциями</li>
+                                    <li class="content__item">Возможна чистовая отделка</li>
+                                    <li class="content__item">С проектом или без</li>
+                                </ul>
+
+                                <ul class="content__list content__list--advantages">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Ключевые преимущества:</h4>
+                                    </li>
+                                    <li class="content__item">Любая форма и размер проемов</li>
+                                    <li class="content__item">Аккуратность и чистота</li>
+                                    <li class="content__item">Безопасность операторов</li>
+                                    <li class="content__item">Ровный рез без доработки</li>
+                                    <li class="content__item">Высокая скорость и доступная цена</li>
+                                </ul>
+                            </div>
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
+                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
+                                        прайс-лист.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Закажите алмазную резку проемов в "БУРЕЛОМ":</h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ И РАСШИРЕНИЕ ПРОЕМОВ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- РЕЗКА ПЕРЕКРЫТИЙ -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">РЕЗКА ПЕРЕКРЫТИЙ
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Мы используем современные алмазные инструменты для резки бетонных
+                                перекрытий, обеспечивая:</h3>
+                            <div class="content__block">
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Высокую эффективность и скорость:</h4>
+                                    </li>
+                                    <li class="content__item">Забудьте о перфораторах! Алмазные коронки и пилы режут
+                                        быстро и точно, не требуя частой замены инструмента.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Формирование проемов любой формы и размера:</h4>
+                                    </li>
+                                    <li class="content__item">Отверстия любой конфигурации, идеально ровные края.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Безопасность и аккуратность:</h4>
+                                    </li>
+                                    <li class="content__item">Работаем чисто, с минимальным количеством пыли и
+                                        гарантируем безопасность операторов.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный риск:</h4>
+                                    </li>
+                                    <li class="content__item">Применяем страховочные конструкции для предотвращения
+                                        обрушения плиты.</li>
+                                </ul>
+                            </div>
+
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Резка перекрытий:</h4>
+                                    </li>
+                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
+                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
+                                        прайс-лист.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Закажите алмазную резку перекрытий в "БУРЕЛОМ":
+                                        </h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ПЕРЕКРЫТИЙ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- КАНАТНАЯ РЕЗКА -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">КАНАТНАЯ РЕЗКА
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Канатная резка бетона: Мощная технология для сложных задач!</h3>
+                            <div class="content__block">
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как это работает:</h4>
+                                    </li>
+                                    <li class="content__item">Для пропуска каната в конструкции предварительно бурятся
+                                        отверстия алмазными сверлами. Сам канат представляет собой стальной трос с
+                                        алмазными втулками, изготовленными по передовым технологиям, гарантируя высокое
+                                        качество и надежность.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Важно знать!</h4>
+                                    </li>
+                                    <li class="content__item">Канатная резка - идеальна для демонтажа мостов, дамб,
+                                        фундаментов, стен и других крупных сооружений.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Канатная резка особенно эффективна в случаях,
+                                            когда необходимо:</h4>
+                                    </li>
+                                    <li class="content__item">Резка на большой глубине или в труднодоступных местах.
+                                    </li>
+                                    <li class="content__item">Сохранение целостности окружающей конструкции (минимальные
+                                        вибрации).</li>
+                                    <li class="content__item">Работать в условиях ограниченного пространства.</li>
+                                </ul>
+                            </div>
+
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Канатная резка:</h4>
+                                    </li>
+                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
+                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
+                                        прайс-лист.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Закажите канатную резку в "БУРЕЛОМ":</h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="#prise">ЦЕНЫ КАНАТНУЮ РЕЗКУ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- БУРЕНИЕ ОТВЕРСТИЙ -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">БУРЕНИЕ ОТВЕРСТИЙ
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Алмазное бурение: точные отверстия быстро и безопасно!</h3>
+
+                            <!-- Верхний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--application">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Применение:</h4>
+                                    </li>
+                                    <li class="content__item">Водоснабжение, отопление, вентиляция, кондиционирование,
+                                        сантехника, бассейны.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Виды бурения: </h4>С водой, сухое, под углом и
+                                        другие.
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Точность: </h4>Ровные отверстия без сколов.
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Универсальность: </h4>Любые углы и положения.
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Скорость: </h4>В 2 раза быстрее.
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Безопасность: </h4>Тихая работа, минимум пыли и
+                                        вибрации.
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Нижний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Бурение отверстий:</h4>
+                                    </li>
+                                    <li class="content__item">Диаметра, материала, сложности и объема.</li>
+                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
+                                        прайс-лист.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Закажите алмазное бурение в "БУРЕЛОМ":</h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="">ЦЕНЫ НА БУРЕНИЕ ОТВЕРСТИЙ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Усиление проемов: Безопасность и надежность вашего проекта</h3>
+
+                            <!-- Верхний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--reasons">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Зачем это нужно?</h4>
+                                    </li>
+                                    <li class="content__item">Усиление необходимо при создании или расширении проемов,
+                                        чтобы сохранить несущую способность стены и обеспечить безопасность конструкции.
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Что мы предлагаем:</h4>
+                                    </li>
+                                    <li class="content__item">Усиление проемов в несущих стенах.</li>
+                                    <li class="content__item">Усиление уголком (для панельных домов, кирпичных и
+                                        пеноблочных стен).</li>
+                                    <li class="content__item">Усиление швеллером (для несущих панельных стен и
+                                        перекрытий).</li>
+                                    <li class="content__item">Комбинированное усиление (для сложных архитектурных
+                                        решений и толстых стен).</li>
+                                </ul>
+                            </div>
+                            <!-- Нижний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Выбор усиления зависит:</h4>
+                                    </li>
+                                    <li class="content__item">от материала стены, размера проема и нагрузки.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Закажите усиление проемов металлом в "БУРЕЛОМ":
+                                        </h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="#prise">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ -->
+                    <li class="accordion__item">
+                        <button class="accordion__button">ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ
+                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                        </button>
+                        <div class="accordion__content">
+                            <h3 class="content__title">Демонтаж бетона и ж/б конструкций</h3>
+
+                            <!-- Верхний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--technologies">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Технологии демонтажа:</h4>
+                                    </li>
+                                    <li class="content__item">Алмазная резка стенорезными машинами: Распил сильно
+                                        армированных ж/б стен и перекрытий с использованием воды для охлаждения диска,
+                                        уменьшения пыли и получения чистого реза.</li>
+                                    <li class="content__item">Разрушение на фрагменты: Резка конструкции на части с
+                                        последующим удалением с помощью подъемных механизмов.</li>
+                                </ul>
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Профессиональный демонтаж бетонных и
+                                            железобетонных конструкций любой сложности. Имеем все необходимые допуски и
+                                            применяем современную технику, включая алмазную резку.</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Нижний блок -->
+                            <div class="content__block">
+                                <ul class="content__list content__list--prices">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Цена:</h4>
+                                    </li>
+                                    <li class="content__item">Вы оплачиваете только стоимость работ по резке и усилению
+                                        проема. Расходы на согласование перепланировки оплачиваются отдельно.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
+                                    </li>
+                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
+                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
+                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
+                                    <li class="content__item">Рассматриваем выезд в регионы</li>
+                                </ul>
+
+                                <ul class="content__list content__list--process">
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Как мы работаем:</h4>
+                                    </li>
+                                    <li class="content__item">Используем стационарные станки и компактный ручной
+                                        инструмент.</li>
+                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
+                                        конструкции.</li>
+                                    <li class="content__item">
+                                        <h4 class="content__subtitle">Сделайте демонтаж конструкций с "БУРЕЛОМ":</h4>
+                                    </li>
+                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
+                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
+                                </ul>
+                            </div>
+                            <div class="content__link-container">
+                                <a class="content__link" href="#prise">ЦЕНЫ ДЕМОНТАЖ КОНСТРУКЦИЙ</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDER -->
+        <section class="gallery" id="gallery">
+            <div class="container slider-container">
+                <h2 class="gallery__title">НАШИ РАБОТЫ</h2>
+                <div class="filters">
+                    <button class="btn filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> Все работы
+                    </button>
+                    <button class="btn filter-btn" data-filter="photo">
+                        <i class="fas fa-camera"></i> Фотографии
+                    </button>
+                    <button class="btn filter-btn" data-filter="video">
+                        <i class="fas fa-video"></i> Видео
+                    </button>
+                </div>
+                <div class="slider">
+                    <!-- Группа 1 -->
+                    <div class="slide-group">
+                        <div class="gallery-item video-item" data-type="video"
+                            data-kinescope-id="4xa9wFAEr2BXw8p3rawPju">
+                            <img class="video-preview" src="./img/preview4.webp" alt="Бурение сквозного отверстия">
+
+                            <div class="item-type video-type">Видео</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide2.webp" alt="Бурение сквозного отверстия">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <!-- Видео элементы -->
+                        <div class="gallery-item video-item" data-type="video"
+                            data-kinescope-id="pmGKWgRyjzWceBThr2XdZA">
+                            <img class="video-preview" src="./img/preview1.webp" alt="Бурение сквозного отверстия">
+
+                            <div class="item-type video-type">Видео</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide3.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
                     </div>
-                </li>
-            </ul>
+
+                    <!-- Группа 2 -->
+                    <div class="slide-group">
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide4.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item video-item" data-type="video"
+                            data-kinescope-id="mZRBB5m6UnzH7E9xGfEH8S">
+                            <img class="video-preview" src="./img/preview2.webp" alt="Бурение сквозного отверстия">
+
+                            <div class="item-type video-type">Видео</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide5.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide6.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+                    </div>
+
+                    <!-- Группа 3 -->
+
+                    <div class="slide-group">
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide7.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide8.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide9.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item video-item" data-type="video"
+                            data-kinescope-id="58ceF9AdeHwafzqsuHjqck">
+                            <img class="video-preview" src="./img/preview3.webp" alt="Бурение сквозного отверстия">
+
+                            <div class="item-type video-type">Видео</div>
+                        </div>
+                    </div>
+
+                    <!-- Группа 4 -->
+
+                    <div class="slide-group">
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide10.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide11.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide12.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide13.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+                    </div>
+                    <!-- Группа 5 -->
+                    <div class="slide-group">
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide1.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide11.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide12.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+
+                        <div class="gallery-item" data-type="photo">
+                            <img src="./img/slide13.webp" alt="">
+                            <div class="item-type photo-type">Фото</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- SLIDER NAVIGATION -->
+                <div class="slider-nav">
+                    <div class="nav-arrow prev-arrow">
+                        <img src="./img/arrow_left.svg" alt="">
+                    </div>
+                    <div class="nav-arrow next-arrow">
+                        <img src="./img/arrow_right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Лайтбокс -->
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close"><img class="accordion__icon lightbox__icon" src="./img/cloze.svg"
+                        alt="Закрыть"></span>
+                <!-- Контент будет добавляться динамически -->
+                <div class="lightbox-nav">
+                    <div class="lightbox-prev prev-arrow"><i class="fas fa-chevron-left"><img src="./img/arrow_left.svg"
+                                alt=""></i></div>
+                    <div class="lightbox-next next-arrow"><i class="fas fa-chevron-right"><img
+                                src="./img/arrow_right.svg" alt=""></i></div>
+                </div>
+                <div class="lightbox-counter"></div>
+            </div>
         </div>
-    </section>
 
-    <section class="slider" id="slider">
-        <div class="swiper container slider__inner">
-            <h2 class="slider__title2">НАШИ РАБОТЫ</h2>
-            <ul class="swiper-wrapper slider__list">
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide1.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide2.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide3.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide4.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide5.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide6.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide7.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide8.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide9.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide10.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide11.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-
-                <li class="swiper-slide slider__list-item">
-                    <figure class="slider__list-figure">
-                        <img class="slider__list-image" src='./img/slide12.webp' alt='missing' />
-                        <!-- <figcaption class="slider__list-text">Описание слайда</figcaption> -->
-                    </figure>
-                </li>
-            </ul>
-
-            <!-- If we need navigation buttons -->
-            <img class="swiper-button-prev" src="./img/arrow_left.svg" alt="">
-            <img class="swiper-button-next" src="./img/arrow_right.svg" alt="">
-        </div>
-    </section>
+        <!-- PROMO BLOCK -->
+        <section class="promo">
+            <div class="container promo__inner">
+                <h2 class="promo__title2">От нарезки швов до сноса зданий – "БУРЕЛОМ" - решаем любые задачи!
+                </h2>
+                <div class="promo__preferents">
+                    <div class="promo__block">
+                        <h4>Мы предлагаем широкий спектр услуг по демонтажу, алмазной резке и бурению:</h4>
+                        <ul class="promo__list">
+                            <li class="promo__list-item">Нарезка температурных швов</li>
+                            <li class="promo__list-item">Демонтаж подоконных блоков и стен</li>
+                            <li class="promo__list-item">Сухое сверление бетона</li>
+                            <li class="promo__list-item">Устройство штроб под трубы</li>
+                            <li class="promo__list-item">Демонтаж форшахт</li>
+                            <li class="promo__list-item">Снос ж/б конструкций, мостов, зданий, резка балок
+                            </li>
+                            <li class="promo__list-item">И многое другое!</li>
+                        </ul>
+                    </div>
+                    <div class="promo__block">
+                        <h4 class="promo__title4">Преимущества:</h4>
+                        <ul class="promo__list">
+                            <li class="promo__list-item">Современный парк техники</li>
+                            <li class="promo__list-item">Профессиональное оборудование</li>
+                            <li class="promo__list-item">Гарантия своевременной замены оборудования</li>
+                            <li class="promo__list-item">Работаем в Москве и Московской области</li>
+                            <li class="promo__list-item">Бесплатный выезд для осмотра (Москва и МО)</li>
+                            <li class="promo__list-item">Возможны выезды в регионы (условия оговариваются
+                                индивидуально)
+                            </li>
+                            <li class="promo__list-item"><span class="promo__title4">Важно: </span>Уборка и
+                                оклейка
+                                конструкций оплачиваются отдельно.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="promo__text">Готовы обсудить ваш проект? <a href="#footer" class="promo__link">Свяжитесь с 
+                        нами!</a></p>
+                <p class="promo__text2">БЕСПЛАТНЫЙ ОСМОТР В Г.МОСКВА, МОСКОВСКАЯ ОБЛАСТЬ, РАССМАТРИВАЕМ
+                    ВЫЕЗДЫ В
+                    ДРУГИЕ
+                    РЕГИОНЫ</p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer" id="footer">
         <div class="container footer__inner">
@@ -1296,11 +1440,11 @@
                 выезд в регионы. Бесплатный осмотр объекта в пределах г.Москвы.</p>
             <div class="header__social">
                 <div class="header__social-phones">
-                    <a href="tel:+79933643617" class="btn footer__btn">8-993-364-36-17</a>
-                    <a href="tel:+79773011050" class="btn footer__btn">8-977-301-10-50</a>
+                    <a href="https://wa.me/+79933643671" class="btn header__btn" target="_blank">8-993-364-36-71</a>
+                    <a href="https://t.me/+79773011050" class="btn header__btn" target="_blank">8-977-301-10-50</a>
                 </div>
                 <div class="header__social-icons">
-                    <a href="https://wa.me/+79933643617" class="header__social-link" target="_blank"
+                    <a href="https://wa.me/+79933643671" class="header__social-link" target="_blank"
                         rel="noopener noreferrer">
                         <svg class="header__social-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="46.000000pt" height="46.000000pt" viewBox="0 0 46.000000 46.000000"
@@ -1317,7 +1461,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="https://t.me/+79933643671" class="header__social-link" target="_blank"
+                    <a href="https://t.me/+79773011050" class="header__social-link" target="_blank"
                         rel="noopener noreferrer"><svg class="header__social-icon" version="1.0"
                             xmlns="http://www.w3.org/2000/svg" width="46.000000pt" height="46.000000pt"
                             viewBox="0 0 46.000000 46.000000" preserveAspectRatio="xMidYMid meet">
@@ -1325,10 +1469,10 @@
                             <g transform="translate(0.000000,46.000000) scale(0.100000,-0.100000)" fill="#000000"
                                 stroke="none">
                                 <path d="M150 447 c-49 -16 -123 -93 -138 -143 -27 -91 -8 -169 58 -234 93
-                       -94 227 -94 320 0 94 93 94 227 0 320 -65 65 -150 85 -240 57z m183 -152 c-8
-                       -81 -27 -167 -38 -171 -15 -6 -95 43 -95 58 0 5 16 22 35 39 52 46 42 54 -17
-                       14 -29 -19 -64 -35 -78 -35 -27 0 -58 15 -49 24 12 12 215 94 229 93 8 -2 14
-                       -11 13 -22z" />
+                           -94 227 -94 320 0 94 93 94 227 0 320 -65 65 -150 85 -240 57z m183 -152 c-8
+                           -81 -27 -167 -38 -171 -15 -6 -95 43 -95 58 0 5 16 22 35 39 52 46 42 54 -17
+                           14 -29 -19 -64 -35 -78 -35 -27 0 -58 15 -49 24 12 12 215 94 229 93 8 -2 14
+                           -11 13 -22z" />
                             </g>
                         </svg>
                     </a>
@@ -1338,9 +1482,110 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="./scripts/swiper.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="scripts/main.js"></script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://burelom.pro"
+        },
+        {
+            "@type": "ListItem", 
+            "position": 2,
+            "name": "Услуги",
+            "item": "https://burelom.pro#cards"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3, 
+            "name": "Цены",
+            "item": "https://burelom.pro#prise"
+        }
+    ]
+}
+</script>
+
+    <!-- Service Catalog Schema -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Алмазное бурение и резка бетона",
+    "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "БУРЕЛОМ"
+    },
+    "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Москва и Московская область"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Услуги алмазной резки",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Алмазное бурение коронкой",
+                    "description": "Бурение отверстий в бетоне, кирпиче и железобетоне"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service", 
+                    "name": "Алмазная резка диском",
+                    "description": "Резка бетонных конструкций алмазными дисками"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Канатная резка", 
+                    "description": "Резка бетона алмазным канатом"
+                }
+            }
+        ]
+    }
+}
+</script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Создаем проемы любой сложности и конфигурации в бетоне, кирпиче и железобетоне: дверные, оконные, вентиляционные. Под лестницы, лифты, грузы, ниши, штробы."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "РЕЗКА ПЕРЕКРЫТИЙ", 
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Мы используем современные алмазные инструменты для резки бетонных перекрытий, обеспечивая высокую эффективность и скорость работы."
+            }
+        }
+    ]
+}
+</script>
+
 </body>
 
 </html>

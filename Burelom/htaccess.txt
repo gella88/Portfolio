@@ -1,0 +1,4 @@
+# Разрешить прямой доступ к robots.txt
+<Files "robots.txt">
+    RewriteEngine Off
+</Files>

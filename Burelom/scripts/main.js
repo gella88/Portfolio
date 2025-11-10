@@ -23,22 +23,47 @@ window.onclick = function (event) {
   }
 }
 
-// TOOGLE ACCORDEON
-const accordionHeaders = document.querySelectorAll(".prise__acc-btn");
+// TOOGLE ACCORDION
+        const accordionButtons = document.querySelectorAll(".accordion__button");
 
-accordionHeaders.forEach(header => {
-  header.addEventListener("click", function () {
+        accordionButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                // Закрываем все открытые элементы
+                accordionButtons.forEach(otherButton => {
+                    if (otherButton !== this) {
+                        otherButton.classList.remove("accordion__button--active");
+                        let otherContent = otherButton.nextElementSibling;
+                        otherContent.style.maxHeight = null;
+                    }
+                });
 
-    this.classList.toggle("active");
+                // Переключаем текущий элемент
+                this.classList.toggle("accordion__button--active");
+                let content = this.nextElementSibling;
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
 
-    let content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+        // Дополнительное исправление для мобильных устройств
+function fixAccordionMobile() {
+    if (window.innerWidth <= 1200) {
+        const contents = document.querySelectorAll(".accordion__content");
+        contents.forEach(content => {
+            if (content.style.maxHeight) {
+                content.style.maxHeight = "none";
+            }
+        });
     }
-  });
-});
+}
+
+// Вызываем при загрузке и изменении размера окна
+window.addEventListener('load', fixAccordionMobile);
+window.addEventListener('resize', fixAccordionMobile);
 
 // Burger menu
 const burgerMenu = document.querySelector('.burger');

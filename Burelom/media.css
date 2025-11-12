@@ -1,17 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 6 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* Responsive Styles */
 @media (max-width: 1400px) {
 	.container {
@@ -115,7 +101,8 @@
 	}
 
 	.mobile__logo {
-		display: block;
+		display: inline-block;
+		max-width: 70px;
 		position: absolute;
 		left: 50%;
 		-webkit-transform: translateX(-50%);
@@ -166,10 +153,11 @@
 		text-shadow: none;
 	}
 
-	    .burger {
-        z-index: 1001; /* Выше чем меню */
+	.burger {
+		z-index: 1001;
+		/* Выше чем меню */
 
-    }
+	}
 
 
 	.burger.change {
@@ -238,7 +226,7 @@
 @media (max-width: 768px) {
 
 	.mobile__logo {
-		max-height: 50px;
+		max-width: 50px;
 	}
 
 	.hero {
@@ -447,10 +435,14 @@
 	}
 
 	.modal .close {
-		width: 50px;
-		height: 50px;
-		top: -5px;
-		right: 2px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.close__button::before,
+	.close__button::after {
+		width: 20px;
+		height: 4px;
 	}
 
 	.nav-arrow {
@@ -466,6 +458,12 @@
 @media (max-width: 500px) {
 	.header__social-phones {
 		display: none;
+	}
+
+	.footer__social-phones {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 
 	.modal__content {
@@ -497,15 +495,15 @@
 		max-width: 320px;
 	}
 
-	.content__link {
+	.accordion__content-link {
 		font-size: 10px;
 	}
 
-	.content__title {
+	.accordion__content-title {
 		font-size: 16px;
 	}
 
-	.content__subtitle {
+	.accordion__content-subtitle {
 		font-size: 14px;
 		word-break: break-word !important;
 		overflow-wrap: anywhere !important;
@@ -514,17 +512,17 @@
 	}
 
 	/* Дополнительно для flex-контейнеров */
-	.content__item {
+	.accordion__content-item {
 		min-width: 0;
 		word-wrap: break-word;
 		font-size: 12px;
 	}
 
-	.content__list {
+	.accordion__content-list {
 		min-width: 0;
 	}
 
-	.content__block {
+	.accordion__content-block {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -548,7 +546,6 @@
 	}
 
 	.filter-btn {
-		width: 100px;
 		height: 35px;
 		font-size: 0.8rem;
 		gap: 5px;
@@ -691,15 +688,18 @@
 
 
 @media (max-width: 1024px) and (min-width: 769px) and (orientation: landscape) {
-    .content__block {
-        flex-direction: column;
-    }
-    
-    .content__list {
-        min-width: 100%;
-    }
-    
-    .content__item {
-        font-size: 14px;
-    }
+	.accordion__content-block {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.accordion__content-list {
+		min-width: 100%;
+	}
+
+	.accordion__content-item {
+		font-size: 14px;
+	}
 }

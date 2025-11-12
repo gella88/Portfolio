@@ -18,5 +18,6 @@
   "theme_color": "#dadace",
   "background_color": "#dadace",
   "display": "standalone",
-  "start_url": "https://burelom.pro/"
+  "start_url": "https://burelom.pro/",
+  "scope": "/"
 }

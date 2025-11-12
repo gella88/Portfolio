@@ -237,8 +237,7 @@
                 <!-- АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ -->
                 <div id="modal1" class="modal">
                     <div class="modal__content modal1__content">
-                        <img class="close" onclick="closeModal('modal1')" src="./img/cloze.svg"
-                            alt="закрыть окно алмазное бурение коронкой">
+                        <button class="close close__button" onclick="closeModal('modal1')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНОЕ БУРЕНИЕ КОРОНКОЙ</h2>
                         <div class="modal__prise-content">
                             <h4 class="modal__prise-title4">Стоимость указана в рублях, за сантиметр погонный бурения.
@@ -388,8 +387,7 @@
                 <!-- АЛМАЗНАЯ РЕЗКА ДИСКОМ -->
                 <div id="modal2" class="modal">
                     <div class="modal__content modal2__content">
-                        <img class="close" onclick="closeModal('modal2')" src="./img/cloze.svg"
-                            alt="закрыть окно алмазная резка диском">
+                        <button class="close close__button" onclick="closeModal('modal2')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ДИСКОМ</h2>
                         <div class="modal__prise-content">
                             <h4 class="modal__prise-title4">Стоимость указана в рублях, за метр погонный резки.</h4>
@@ -485,8 +483,7 @@
                 <!-- АЛМАЗНАЯ РЕЗКА ПРОЕМОВ -->
                 <div id="modal3" class="modal">
                     <div class="modal__content modal3__content">
-                        <img class="close" onclick="closeModal('modal3')" src="./img/cloze.svg"
-                            alt="закрыть окно АЛМАЗНАЯ РЕЗКА ПРОЕМОВ">
+                        <button class="close close__button" onclick="closeModal('modal3')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ПРОЕМОВ</h2>
                         <div class="modal__prise-content">
                             <h4 class="modal__prise-title4">Стоимость указана в рублях, за резку стандартного проема
@@ -583,8 +580,7 @@
                 <!-- КАНАТНАЯ РЕЗКА -->
                 <div id="modal4" class="modal">
                     <div class="modal__content modal4__content">
-                        <img class="close" onclick="closeModal('modal4')" src="./img/cloze.svg"
-                            alt="ЗАКРЫТЬ ОКНО КАНАТНАЯ РЕЗКА">
+                        <button class="close close__button" onclick="closeModal('modal4')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА КАНАТНУЮ РЕЗКУ</h2>
                         <div class="modal__prise-content">
                             <!-- <h4 class="modal__prise-title4">Стоимость указана в рублях, за резку стандартного проема 2100х900мм, на части до 40кг.</h4> -->
@@ -620,8 +616,7 @@
                 <!-- УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ -->
                 <div id="modal5" class="modal">
                     <div class="modal__content modal5__content">
-                        <img class="close" onclick="closeModal('modal5')" src="./img/cloze.svg"
-                            alt="ЗАКРЫТЬ ОКНО УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ">
+                        <button class="close close__button" onclick="closeModal('modal5')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</h2>
                         <div class="modal__prise-content">
                             <h4 class="modal__prise-title4">Указана минимальная стоимость в рублях, за метр погонный
@@ -715,8 +710,7 @@
                 <!-- ДЕМОНТАЖ, ИНЫЕ УСЛУГИ -->
                 <div id="modal7" class="modal">
                     <div class="modal__content modal7__content">
-                        <img class="close" onclick="closeModal('modal7')" src="./img/cloze.svg"
-                            alt="ЗАКРЫТЬ ОКНО ДЕМОНТАЖ И ИНЫЕ УСЛУГИ">
+                        <button class="close close__button" onclick="closeModal('modal7')" title="Закрыть"></button>
                         <h2 class="modal__content-title2">ЦЕНЫ НА ДЕМОНТАЖ И ИНЫЕ УСЛУГИ</h2>
                         <div class="modal__prise-content">
                             <!-- <h4 class="modal__prise-title4">Указана минимальная стоимость в рублях, за метр погонный усиления.</h4> -->
@@ -766,448 +760,515 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </section>
 
-        <!-- Описание -->
+        <!-- ACCORDION -->
 
-        <section class="accordion" id="accordion" data-schema="FAQPage">
+        <section class="accordion" id="accordion" itemscope itemtype="https://schema.org/FAQPage">
             <div class="accordion__inner">
                 <h2 class="accordion__title">ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</h2>
                 <ul class="accordion__list">
                     <!-- АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ ПРОЕМОВ
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Закрыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-1">
+                            <span class="accordion__button-text" itemprop="name">АЛМАЗНАЯ РЕЗКА И РАСШИРЕНИЕ
+                                ПРОЕМОВ</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Создаем проемы любой сложности и конфигурации в бетоне, кирпиче и
-                                железобетоне:</h3>
-                            <p class="content__text">Дверные, оконные, вентиляционные. Под лестницы, лифты, грузы, ниши,
-                                штробы.</p>
+                        <div class="accordion__content" id="content-1" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Создаем проемы любой сложности и конфигурации в
+                                    бетоне, кирпиче и железобетоне:</h3>
+                                <p class="accordion__content-text">Дверные, оконные, вентиляционные. Под лестницы,
+                                    лифты, грузы, ниши, штробы.</p>
 
-                            <div class="content__block">
-                                <ul class="content__list content__list--methods">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Методы:</h4>
-                                    </li>
-                                    <li class="content__item">Алмазная резка диском, канатом, бурение</li>
-                                    <li class="content__item">Безопасный демонтаж частей</li>
-                                    <li class="content__item">Обрамление металлоконструкциями</li>
-                                    <li class="content__item">Возможна чистовая отделка</li>
-                                    <li class="content__item">С проектом или без</li>
-                                </ul>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--methods">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Методы:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Алмазная резка диском, канатом, бурение</li>
+                                        <li class="accordion__content-item">Безопасный демонтаж частей</li>
+                                        <li class="accordion__content-item">Обрамление металлоконструкциями</li>
+                                        <li class="accordion__content-item">Возможна чистовая отделка</li>
+                                        <li class="accordion__content-item">С проектом или без</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--advantages">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Ключевые преимущества:</h4>
-                                    </li>
-                                    <li class="content__item">Любая форма и размер проемов</li>
-                                    <li class="content__item">Аккуратность и чистота</li>
-                                    <li class="content__item">Безопасность операторов</li>
-                                    <li class="content__item">Ровный рез без доработки</li>
-                                    <li class="content__item">Высокая скорость и доступная цена</li>
-                                </ul>
-                            </div>
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
-                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
-                                        прайс-лист.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                    <ul class="accordion__content-list accordion__content-list--advantages">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Ключевые преимущества:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Любая форма и размер проемов</li>
+                                        <li class="accordion__content-item">Аккуратность и чистота</li>
+                                        <li class="accordion__content-item">Безопасность операторов</li>
+                                        <li class="accordion__content-item">Ровный рез без доработки</li>
+                                        <li class="accordion__content-item">Высокая скорость и доступная цена</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Зависит от материала, толщины, размера и
+                                            длины реза.</li>
+                                        <li class="accordion__content-item">Узнайте точную стоимость у менеджера или
+                                            посмотрите прайс-лист.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Закажите алмазную резку проемов в "БУРЕЛОМ":</h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ И РАСШИРЕНИЕ ПРОЕМОВ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Закажите алмазную резку проемов в
+                                                "БУРЕЛОМ":</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ И РАСШИРЕНИЕ
+                                        ПРОЕМОВ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
+
                     <!-- РЕЗКА ПЕРЕКРЫТИЙ -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">РЕЗКА ПЕРЕКРЫТИЙ
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-2">
+                            <span class="accordion__button-text" itemprop="name">РЕЗКА ПЕРЕКРЫТИЙ</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Мы используем современные алмазные инструменты для резки бетонных
-                                перекрытий, обеспечивая:</h3>
-                            <div class="content__block">
-                                <ul class="content__list">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Высокую эффективность и скорость:</h4>
-                                    </li>
-                                    <li class="content__item">Забудьте о перфораторах! Алмазные коронки и пилы режут
-                                        быстро и точно, не требуя частой замены инструмента.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Формирование проемов любой формы и размера:</h4>
-                                    </li>
-                                    <li class="content__item">Отверстия любой конфигурации, идеально ровные края.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Безопасность и аккуратность:</h4>
-                                    </li>
-                                    <li class="content__item">Работаем чисто, с минимальным количеством пыли и
-                                        гарантируем безопасность операторов.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный риск:</h4>
-                                    </li>
-                                    <li class="content__item">Применяем страховочные конструкции для предотвращения
-                                        обрушения плиты.</li>
-                                </ul>
-                            </div>
+                        <div class="accordion__content" id="content-2" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Мы используем современные алмазные инструменты для
+                                    резки бетонных перекрытий, обеспечивая:</h3>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Высокую эффективность и скорость:
+                                            </h4>
+                                        </li>
+                                        <li class="accordion__content-item">Забудьте о перфораторах! Алмазные коронки и
+                                            пилы режут быстро и точно, не требуя частой замены инструмента.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Формирование проемов любой формы и
+                                                размера:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Отверстия любой конфигурации, идеально
+                                            ровные края.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Безопасность и аккуратность:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Работаем чисто, с минимальным количеством
+                                            пыли и гарантируем безопасность операторов.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный риск:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Применяем страховочные конструкции для
+                                            предотвращения обрушения плиты.</li>
+                                    </ul>
+                                </div>
 
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Резка перекрытий:</h4>
-                                    </li>
-                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
-                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
-                                        прайс-лист.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Резка перекрытий:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Зависит от материала, толщины, размера и
+                                            длины реза.</li>
+                                        <li class="accordion__content-item">Узнайте точную стоимость у менеджера или
+                                            посмотрите прайс-лист.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Закажите алмазную резку перекрытий в "БУРЕЛОМ":
-                                        </h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="#prise">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ ПЕРЕКРЫТИЙ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Закажите алмазную резку перекрытий в
+                                                "БУРЕЛОМ":</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ НА АЛМАЗНУЮ РЕЗКУ
+                                        ПЕРЕКРЫТИЙ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
+
                     <!-- КАНАТНАЯ РЕЗКА -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">КАНАТНАЯ РЕЗКА
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-3">
+                            <span class="accordion__button-text" itemprop="name">КАНАТНАЯ РЕЗКА</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Канатная резка бетона: Мощная технология для сложных задач!</h3>
-                            <div class="content__block">
-                                <ul class="content__list">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как это работает:</h4>
-                                    </li>
-                                    <li class="content__item">Для пропуска каната в конструкции предварительно бурятся
-                                        отверстия алмазными сверлами. Сам канат представляет собой стальной трос с
-                                        алмазными втулками, изготовленными по передовым технологиям, гарантируя высокое
-                                        качество и надежность.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Важно знать!</h4>
-                                    </li>
-                                    <li class="content__item">Канатная резка - идеальна для демонтажа мостов, дамб,
-                                        фундаментов, стен и других крупных сооружений.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Канатная резка особенно эффективна в случаях,
-                                            когда необходимо:</h4>
-                                    </li>
-                                    <li class="content__item">Резка на большой глубине или в труднодоступных местах.
-                                    </li>
-                                    <li class="content__item">Сохранение целостности окружающей конструкции (минимальные
-                                        вибрации).</li>
-                                    <li class="content__item">Работать в условиях ограниченного пространства.</li>
-                                </ul>
-                            </div>
+                        <div class="accordion__content" id="content-3" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Канатная резка бетона: Мощная технология для
+                                    сложных задач!</h3>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как это работает:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Для пропуска каната в конструкции
+                                            предварительно бурятся отверстия алмазными сверлами. Сам канат представляет
+                                            собой стальной трос с алмазными втулками, изготовленными по передовым
+                                            технологиям, гарантируя высокое качество и надежность.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Важно знать!</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Канатная резка - идеальна для демонтажа
+                                            мостов, дамб, фундаментов, стен и других крупных сооружений.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Канатная резка особенно эффективна в
+                                                случаях, когда необходимо:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Резка на большой глубине или в
+                                            труднодоступных местах.</li>
+                                        <li class="accordion__content-item">Сохранение целостности окружающей
+                                            конструкции (минимальные вибрации).</li>
+                                        <li class="accordion__content-item">Работать в условиях ограниченного
+                                            пространства.</li>
+                                    </ul>
+                                </div>
 
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Канатная резка:</h4>
-                                    </li>
-                                    <li class="content__item">Зависит от материала, толщины, размера и длины реза.</li>
-                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
-                                        прайс-лист.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Канатная резка:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Зависит от материала, толщины, размера и
+                                            длины реза.</li>
+                                        <li class="accordion__content-item">Узнайте точную стоимость у менеджера или
+                                            посмотрите прайс-лист.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Закажите канатную резку в "БУРЕЛОМ":</h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="#prise">ЦЕНЫ КАНАТНУЮ РЕЗКУ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Закажите канатную резку в "БУРЕЛОМ":
+                                            </h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ КАНАТНУЮ РЕЗКУ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
+
                     <!-- БУРЕНИЕ ОТВЕРСТИЙ -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">БУРЕНИЕ ОТВЕРСТИЙ
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-4">
+                            <span class="accordion__button-text" itemprop="name">БУРЕНИЕ ОТВЕРСТИЙ</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Алмазное бурение: точные отверстия быстро и безопасно!</h3>
+                        <div class="accordion__content" id="content-4" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Алмазное бурение: точные отверстия быстро и
+                                    безопасно!</h3>
 
-                            <!-- Верхний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--application">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Применение:</h4>
-                                    </li>
-                                    <li class="content__item">Водоснабжение, отопление, вентиляция, кондиционирование,
-                                        сантехника, бассейны.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Виды бурения: </h4>С водой, сухое, под углом и
-                                        другие.
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Точность: </h4>Ровные отверстия без сколов.
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Универсальность: </h4>Любые углы и положения.
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Скорость: </h4>В 2 раза быстрее.
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Безопасность: </h4>Тихая работа, минимум пыли и
-                                        вибрации.
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Нижний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Бурение отверстий:</h4>
-                                    </li>
-                                    <li class="content__item">Диаметра, материала, сложности и объема.</li>
-                                    <li class="content__item">Узнайте точную стоимость у менеджера или посмотрите
-                                        прайс-лист.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                <!-- Верхний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--application">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Применение:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Водоснабжение, отопление, вентиляция,
+                                            кондиционирование, сантехника, бассейны.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Виды бурения: </h4>С водой, сухое,
+                                            под углом и другие.
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Точность: </h4>Ровные отверстия без
+                                            сколов.
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Универсальность: </h4>Любые углы и
+                                            положения.
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Скорость: </h4>В 2 раза быстрее.
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Безопасность: </h4>Тихая работа,
+                                            минимум пыли и вибрации.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Нижний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Бурение отверстий:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Диаметра, материала, сложности и объема.
+                                        </li>
+                                        <li class="accordion__content-item">Узнайте точную стоимость у менеджера или
+                                            посмотрите прайс-лист.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Закажите алмазное бурение в "БУРЕЛОМ":</h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="">ЦЕНЫ НА БУРЕНИЕ ОТВЕРСТИЙ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Закажите алмазное бурение в
+                                                "БУРЕЛОМ":</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ НА БУРЕНИЕ ОТВЕРСТИЙ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
+
                     <!-- УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-5">
+                            <span class="accordion__button-text" itemprop="name">УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Усиление проемов: Безопасность и надежность вашего проекта</h3>
+                        <div class="accordion__content" id="content-5" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Усиление проемов: Безопасность и надежность вашего
+                                    проекта</h3>
 
-                            <!-- Верхний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--reasons">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Зачем это нужно?</h4>
-                                    </li>
-                                    <li class="content__item">Усиление необходимо при создании или расширении проемов,
-                                        чтобы сохранить несущую способность стены и обеспечить безопасность конструкции.
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Что мы предлагаем:</h4>
-                                    </li>
-                                    <li class="content__item">Усиление проемов в несущих стенах.</li>
-                                    <li class="content__item">Усиление уголком (для панельных домов, кирпичных и
-                                        пеноблочных стен).</li>
-                                    <li class="content__item">Усиление швеллером (для несущих панельных стен и
-                                        перекрытий).</li>
-                                    <li class="content__item">Комбинированное усиление (для сложных архитектурных
-                                        решений и толстых стен).</li>
-                                </ul>
-                            </div>
-                            <!-- Нижний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Выбор усиления зависит:</h4>
-                                    </li>
-                                    <li class="content__item">от материала стены, размера проема и нагрузки.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                <!-- Верхний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--reasons">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Зачем это нужно?</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Усиление необходимо при создании или
+                                            расширении проемов, чтобы сохранить несущую способность стены и обеспечить
+                                            безопасность конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Что мы предлагаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Усиление проемов в несущих стенах.</li>
+                                        <li class="accordion__content-item">Усиление уголком (для панельных домов,
+                                            кирпичных и пеноблочных стен).</li>
+                                        <li class="accordion__content-item">Усиление швеллером (для несущих панельных
+                                            стен и перекрытий).</li>
+                                        <li class="accordion__content-item">Комбинированное усиление (для сложных
+                                            архитектурных решений и толстых стен).</li>
+                                    </ul>
+                                </div>
+                                <!-- Нижний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Выбор усиления зависит:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">от материала стены, размера проема и
+                                            нагрузки.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Закажите усиление проемов металлом в "БУРЕЛОМ":
-                                        </h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="#prise">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ МЕТАЛЛОМ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Закажите усиление проемов металлом в
+                                                "БУРЕЛОМ":</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ НА УСИЛЕНИЕ ПРОЕМОВ
+                                        МЕТАЛЛОМ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
+
                     <!-- ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ -->
-                    <li class="accordion__item">
-                        <button class="accordion__button">ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ
-                            <img class="accordion__icon" src="./img/cloze.svg" alt="Открыть">
+                    <li class="accordion__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <button class="accordion__button" aria-expanded="false" aria-controls="content-6">
+                            <span class="accordion__button-text" itemprop="name">ДЕМОНТАЖ РАЗЛИЧНЫХ КОНСТРУКЦИЙ</span>
+                            <span class="close__button accordion__icon" aria-label="Закрыть"></span>
                         </button>
-                        <div class="accordion__content">
-                            <h3 class="content__title">Демонтаж бетона и ж/б конструкций</h3>
+                        <div class="accordion__content" id="content-6" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <div itemprop="text">
+                                <h3 class="accordion__content-title">Демонтаж бетона и ж/б конструкций</h3>
 
-                            <!-- Верхний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--technologies">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Технологии демонтажа:</h4>
-                                    </li>
-                                    <li class="content__item">Алмазная резка стенорезными машинами: Распил сильно
-                                        армированных ж/б стен и перекрытий с использованием воды для охлаждения диска,
-                                        уменьшения пыли и получения чистого реза.</li>
-                                    <li class="content__item">Разрушение на фрагменты: Резка конструкции на части с
-                                        последующим удалением с помощью подъемных механизмов.</li>
-                                </ul>
-                                <ul class="content__list">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Профессиональный демонтаж бетонных и
-                                            железобетонных конструкций любой сложности. Имеем все необходимые допуски и
-                                            применяем современную технику, включая алмазную резку.</h4>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Нижний блок -->
-                            <div class="content__block">
-                                <ul class="content__list content__list--prices">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Цена:</h4>
-                                    </li>
-                                    <li class="content__item">Вы оплачиваете только стоимость работ по резке и усилению
-                                        проема. Расходы на согласование перепланировки оплачиваются отдельно.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Минимальный выезд:</h4>
-                                    </li>
-                                    <li class="content__item">В пределах МКАД: от 9 000 ₽</li>
-                                    <li class="content__item">За МКАД: от 10 000 ₽</li>
-                                    <li class="content__item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
-                                    <li class="content__item">Ночная смена (в пределах МКАД): 12 000 ₽</li>
-                                    <li class="content__item">Рассматриваем выезд в регионы</li>
-                                </ul>
+                                <!-- Верхний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--technologies">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Технологии демонтажа:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Алмазная резка стенорезными машинами: Распил
+                                            сильно армированных ж/б стен и перекрытий с использованием воды для
+                                            охлаждения диска, уменьшения пыли и получения чистого реза.</li>
+                                        <li class="accordion__content-item">Разрушение на фрагменты: Резка конструкции
+                                            на части с последующим удалением с помощью подъемных механизмов.</li>
+                                    </ul>
+                                    <ul class="accordion__content-list">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Профессиональный демонтаж бетонных и
+                                                железобетонных конструкций любой сложности. Имеем все необходимые
+                                                допуски и применяем современную технику, включая алмазную резку.</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Нижний блок -->
+                                <div class="accordion__content-block">
+                                    <ul class="accordion__content-list accordion__content-list--prices">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Цена:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Вы оплачиваете только стоимость работ по
+                                            резке и усилению проема. Расходы на согласование перепланировки оплачиваются
+                                            отдельно.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Минимальный выезд:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">В пределах МКАД: от 9 000 ₽</li>
+                                        <li class="accordion__content-item">За МКАД: от 10 000 ₽</li>
+                                        <li class="accordion__content-item">Выезд далее 10 км от МКАД: +40 ₽/км</li>
+                                        <li class="accordion__content-item">Ночная смена (в пределах МКАД): 12 000 ₽
+                                        </li>
+                                        <li class="accordion__content-item">Рассматриваем выезд в регионы</li>
+                                    </ul>
 
-                                <ul class="content__list content__list--process">
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Как мы работаем:</h4>
-                                    </li>
-                                    <li class="content__item">Используем стационарные станки и компактный ручной
-                                        инструмент.</li>
-                                    <li class="content__item">Соблюдаем технику безопасности и применяем страховочные
-                                        конструкции.</li>
-                                    <li class="content__item">
-                                        <h4 class="content__subtitle">Сделайте демонтаж конструкций с "БУРЕЛОМ":</h4>
-                                    </li>
-                                    <li class="content__item">Цена зависит от объема и сложности работ.</li>
-                                    <li class="content__item">Для консультации и заказа звоните нашим менеджерам.</li>
-                                </ul>
-                            </div>
-                            <div class="content__link-container">
-                                <a class="content__link" href="#prise">ЦЕНЫ ДЕМОНТАЖ КОНСТРУКЦИЙ</a>
+                                    <ul class="accordion__content-list accordion__content-list--process">
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Как мы работаем:</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Используем стационарные станки и компактный
+                                            ручной инструмент.</li>
+                                        <li class="accordion__content-item">Соблюдаем технику безопасности и применяем
+                                            страховочные конструкции.</li>
+                                        <li class="accordion__content-item">
+                                            <h4 class="accordion__content-subtitle">Сделайте демонтаж конструкций с
+                                                "БУРЕЛОМ":</h4>
+                                        </li>
+                                        <li class="accordion__content-item">Цена зависит от объема и сложности работ.
+                                        </li>
+                                        <li class="accordion__content-item">Для консультации и заказа звоните нашим
+                                            менеджерам.</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion__content-link-container">
+                                    <a class="accordion__content-link" href="#price">ЦЕНЫ ДЕМОНТАЖ КОНСТРУКЦИЙ</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1373,14 +1434,12 @@
         <!-- Лайтбокс -->
         <div class="lightbox">
             <div class="lightbox-content">
-                <span class="lightbox-close"><img class="accordion__icon lightbox__icon" src="./img/cloze.svg"
-                        alt="Закрыть"></span>
+                <button class="close__button lightbox-close" title="Закрыть"></button>
+
                 <!-- Контент будет добавляться динамически -->
                 <div class="lightbox-nav">
-                    <div class="lightbox-prev prev-arrow"><i class="fas fa-chevron-left"><img src="./img/arrow_left.svg"
-                                alt=""></i></div>
-                    <div class="lightbox-next next-arrow"><i class="fas fa-chevron-right"><img
-                                src="./img/arrow_right.svg" alt=""></i></div>
+                    <button class="left__arrow prev-arrow lightbox-prev" title="Назад"></button>
+                    <button class="right__arrow next-arrow lightbox-next" title="Вперед"></button>
                 </div>
                 <div class="lightbox-counter"></div>
             </div>
@@ -1422,7 +1481,7 @@
                         </ul>
                     </div>
                 </div>
-                <p class="promo__text">Готовы обсудить ваш проект? <a href="#footer" class="promo__link">Свяжитесь с 
+                <p class="promo__text">Готовы обсудить ваш проект? <a href="#footer" class="promo__link">Свяжитесь с
                         нами!</a></p>
                 <p class="promo__text2">БЕСПЛАТНЫЙ ОСМОТР В Г.МОСКВА, МОСКОВСКАЯ ОБЛАСТЬ, РАССМАТРИВАЕМ
                     ВЫЕЗДЫ В
@@ -1439,7 +1498,7 @@
             <p class="footer__text">Алмазная резка и бурение в г.Москва, Московской области, а так же
                 выезд в регионы. Бесплатный осмотр объекта в пределах г.Москвы.</p>
             <div class="header__social">
-                <div class="header__social-phones">
+                <div class="footer__social-phones header__social-phones">
                     <a href="https://wa.me/+79933643671" class="btn header__btn" target="_blank">8-993-364-36-71</a>
                     <a href="https://t.me/+79773011050" class="btn header__btn" target="_blank">8-977-301-10-50</a>
                 </div>
